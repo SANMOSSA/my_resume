@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>{{ data.name }} — {{ data.title }}</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body data-theme="dark">
+  <main class="panel" role="main">
+    <div class="topbar">
+      <div class="cmd">$ curl -L sanmossa.org</div>
+      <div class="toggles" role="group" aria-label="{{ data.labels.language_toggle }} / {{ data.labels.theme_toggle }}">
+        <div class="lang-switcher">
+          <button class="toggle toggle-lang" id="langToggle" aria-haspopup="true" aria-expanded="false" aria-controls="langMenu">
+            <span class="flag flag-current {{ 'flag-es' if default_language.startswith('es') else 'flag-en' }}" aria-hidden="true"></span>
+            <span class="toggle-label">{{ data.labels.language_name }}</span>
+            <span class="material-icons arrow">expand_more</span>
+          </button>
+          <div class="dropdown" id="langMenu" role="menu">
+            {% for code, lang in languages.items() %}
+            <button class="dropdown-item{% if code == default_language %} active{% endif %}" role="menuitem" data-lang="{{ code }}">
+              <span class="flag flag-{{ 'es' if code.startswith('es') else 'en' }}" aria-hidden="true"></span>
+              <span>{{ lang.labels.language_name }}</span>
+            </button>
+            {% endfor %}
+          </div>
+        </div>
+        <button class="toggle toggle-theme" id="themeToggle" aria-pressed="false">
+          <span class="icon sun" aria-hidden="true"></span>
+          <span class="icon moon" aria-hidden="true"></span>
+          <span class="sr-only">{{ data.labels.theme_toggle }}</span>
+        </button>
+      </div>
+    </div>
+
+    <header class="panel-header">
+      <div class="cmd"></div>
+      <div class="person">
+        <h1 class="name">{{ data.name }}</h1>
+        <div class="role">{{ data.title }}</div>
+      </div>
+    </header>
+
+    <section class="contact" id="contactSection">
+      <a href="mailto:{{ data.email }}" class="muted">{{ data.email }}</a>
+      <span class="sep">•</span>
+      {% if data.website %}
+        <a href="{{ data.website }}" target="_blank" rel="noopener" class="muted">{{ data.website.replace('https://','').replace('http://','') }}</a>
+      {% endif %}
+      {% for s in data.social %}
+        {% if s.url %}<span class="sep">•</span><a href="{{ s.url }}" target="_blank" rel="noopener" class="muted">{{ s.network }}</a>{% endif %}
+      {% endfor %}
+    </section>
+
+    <div class="rule"></div>
+
+    <section class="summary" id="summarySection">
+      <p id="summaryText">{{ data.summary }}</p>
+    </section>
+
+    <section class="section-title"><span id="experienceTitle">{{ data.labels.experience }}</span></section>
+
+    <section class="experience" id="experienceSection">
+      {% for exp in data.experiences %}
+      <article class="job">
+        <div class="job-left">
+          <div class="job-head">
+            {% if exp.image %}
+              <img class="job-logo" src="{{ url_for('static', filename=exp.image) }}" alt="{{ exp.company }} logo">
+            {% else %}
+              <span class="icon material-icons">{{ exp.icon if exp.icon else 'work' }}</span>
+            {% endif %}
+            <div>
+              <div class="company">{{ exp.company }}</div>
+              <div class="position">{{ exp.role }}</div>
+            </div>
+          </div>
+
+          <p class="job-desc">{{ exp.description }}</p>
+
+          <ul class="bullets">
+            {% for b in exp.bullets %}
+              <li><span class="material-icons">{{ b.icon }}</span>{{ b.item }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+
+        <div class="job-right">
+          <div class="dates">{{ exp.start }} — {{ exp.end }}</div>
+          <div class="location">{{ exp.location }}</div>
+        </div>
+      </article>
+      {% endfor %}
+    </section>
+
+    <div class="rule"></div>
+
+    <section class="section-title"><span id="educationTitle">{{ data.labels.education }}</span></section>
+
+    <section class="education" id="educationSection">
+      {% for edu in data.education %}
+      <div class="edu">
+        <div class="edu-left">
+          <div class="institution">{{ edu.institution }}</div>
+          <div class="degree">{{ edu.degree }}</div>
+        </div>
+        <div class="edu-right">
+          <div class="dates">{{ edu.start }} — {{ edu.end }}</div>
+          {% if edu.status %}<div class="status muted">{{ edu.status }}</div>{% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </section>
+
+    <div class="rule"></div>
+
+    <section class="section-title"><span id="skillsTitle">{{ data.labels.skills }}</span></section>
+
+    <section class="skills" id="skillsSection">
+      {% for cat in data.skills %}
+      <div class="skill-block">
+        <h3 class="skill-category">{{ cat.category }}</h3>
+        {% for item in cat['items'] %}
+        <div class="skill">
+          <div class="skill-meta">
+            <div class="label">
+              {% if item.image %}
+                <img class="skill-icon" src="{{ url_for('static', filename=item.image) }}" alt="{{ item.name }}" />
+              {% endif %}
+              <div class="skill-name">{{ item.name }}</div>
+            </div>
+            <div class="skill-level">{{ item.level }}/10</div>
+          </div>
+          <div class="bar" aria-hidden="true">
+            <div class="fill lvl-{{ item.level|int if item.level|int <= 10 else 10 }}" style="width: {{ (item.level / 10 * 100)|round(0) }}%"></div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      {% endfor %}
+    </section>
+
+    <div class="rule"></div>
+
+    <footer class="panel-footer muted">
+      <span id="visualNotePrefix">{{ data.labels.visual_note_prefix }}</span>
+      <a id="visualNoteLink" href="https://github.com/alexpovel/ancv" target="_blank" rel="noopener">{{ data.labels.visual_note_link }}</a>
+    </footer>
+  </main>
+
+  <script>
+    window.resumeBundle = {
+      languages: {{ languages | tojson }},
+      defaultLanguage: '{{ default_language }}',
+      visual: {{ visual | tojson }},
+      staticBase: '{{ url_for('static', filename='') }}'
+    };
+  </script>
+  <script src="{{ url_for('static', filename='resume.js') }}"></script>
+</body>
+</html>
