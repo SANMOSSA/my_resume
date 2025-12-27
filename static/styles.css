@@ -200,7 +200,7 @@ body{
 }
 .section-title span{background:linear-gradient(90deg, rgba(11,21,25,0.9), rgba(11,21,25,0.9));padding:0 12px;}
 [data-theme="light"] .section-title span{background:linear-gradient(90deg, rgba(245,247,251,0.92), rgba(245,247,251,0.92));}
-.summary{color:var(--text);margin-bottom:8px;font-size:14px;padding:0 6px;}
+.summary{color:var(--text);margin-bottom:8px;font-size:14px;padding:0 6px;white-space: pre-line;}
 .summary p{margin:0;}
 .experience{margin-top:6px;}
 .job{

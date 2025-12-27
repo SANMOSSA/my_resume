@@ -1,279 +1,424 @@
 {
-  "default_language": "en",
-  "languages": {
-    "es": {
-      "name": "Santiago Murillo Ossa",
-      "title": "Ingeniero de Sistemas",
-      "email": "murillosantiago157@gmail.com",
-      "website": "https://sanmossa.org",
-      "summary": "Ingeniero de sistemas con experiencia en desarrollo backend, integración de servicios en la nube y dirección técnica de proyectos móviles. Actualmente Development Manager en PartnerHelper: lidero el desarrollo de una aplicación iOS para agilizar citas médicas; diseño y mantengo el backend con integraciones en Azure Blob Storage y Microsoft CRM, y coordino el desarrollo de agentes de IA basados en LLMs en Azure. Me especializo en Python y Flask, con enfoque en soluciones escalables, buenas prácticas de despliegue y trabajo colaborativo.",
-      "labels": {
-        "experience": "Experiencia",
-        "education": "Educación",
-        "skills": "Habilidades",
-        "language_name": "Español",
-        "language_toggle": "Cambiar idioma",
-        "theme_toggle": "Cambiar tema",
-        "visual_note_prefix": "Basado en el estilo del repositorio",
-        "visual_note_link": "ancv",
-        "visual_note_href": "https://github.com/alexpovel/ancv"
-      },
-      "social": [
-        { "network": "LinkedIn", "handle": "", "url": "" },
-        { "network": "GitHub", "handle": "SANMOSSA", "url": "https://github.com/SANMOSSA" }
-      ],
-      "experiences": [
-        {
-          "company": "PartnerHelper",
-          "role": "Development Manager",
-          "location": "Remoto",
-          "start": "diciembre 2025",
-          "end": "presente",
-          "image": "images/partnerhelper.png",
-          "icon": "work",
-          "description": "Gestión y dirección del desarrollo de la aplicación iOS y del ecosistema backend. Coordinación de equipo, planificación y entregables; integración con servicios en la nube y despliegue de agentes de IA.",
-          "bullets": [
-            { "icon": "phone_iphone", "item": "Lidero el desarrollo y la entrega de la aplicación iOS para agilizar citas médicas." },
-            { "icon": "cloud_upload", "item": "Diseño y gestiono el backend con integraciones en Azure Blob Storage y tablas CRM de Microsoft." },
-            { "icon": "smart_toy", "item": "Dirijo el desarrollo de agentes de inteligencia artificial basados en LLMs en Azure." },
-            { "icon": "group", "item": "Coordinación de equipos y procesos de despliegue continuo." }
-          ]
-        },
-        {
-          "company": "PartnerHelper",
-          "role": "Ingeniero de Aplicaciones",
-          "location": "Remoto",
-          "start": "marzo 2024",
-          "end": "diciembre 2025",
-          "image": "images/partnerhelper.png",
-          "icon": "work",
-          "description": "Desarrollador backend enfocado en integración con Azure y soporte de la app iOS.",
-          "bullets": [
-            { "icon": "code", "item": "Desarrollo y mantenimiento del backend y APIs para la aplicación iOS." },
-            { "icon": "cloud_upload", "item": "Implementación de integraciones con Microsoft CRM y Azure Blob Storage." },
-            { "icon": "integration_instructions", "item": "Colaboración en la arquitectura de servicios y despliegues." }
-          ]
-        },
-        {
-          "company": "José Jarsmillo Villegas (empleador individual)",
-          "role": "Auxiliar de Desarrollo",
-          "location": "Remoto",
-          "start": "agosto 2023",
-          "end": "marzo 2024",
-          "icon": "person",
-          "description": "Trabajo contratado para desarrollo backend relacionado con la aplicación; contratado con todos los procesos legales correspondientes.",
-          "bullets": [
-            { "icon": "code", "item": "Desarrollo de funcionalidades backend para la aplicación." },
-            { "icon": "gavel", "item": "Soporte en procesos legales y contractuales relacionados con el encargo." },
-            { "icon": "build", "item": "Implementación y mantenimiento de servicios backend." }
-          ]
-        }
-      ],
-      "education": [
-        {
-          "institution": "Universidad Tecnológica de Pereira",
-          "degree": "Ingeniería de Sistemas y Computación",
-          "start": "enero 2020",
-          "end": "febrero 2025",
-          "status": "Graduado"
-        },
-        {
-          "institution": "Universidad Tecnológica de Pereira",
-          "degree": "Maestría en Inteligencia Artificial y Ciencia de Datos (Sistemas y Computación)",
-          "start": "agosto 2025",
-          "end": "presente",
-          "status": "Cursando"
-        }
-      ],
-      "skills": [
-        {
-          "category": "Lenguajes / Herramientas",
-          "items": [
-            { "name": "Python", "level": 8, "image": "images/icons/python.png" },
-            { "name": "Docker", "level": 6, "image": "images/icons/docker.png" },
-            { "name": "Git", "level": 6, "image": "images/icons/git.png" },
-            { "name": "HTML", "level": 5, "image": "images/icons/html.png" },
-            { "name": "CSS", "level": 5, "image": "images/icons/css.png" },
-            { "name": "JavaScript", "level": 5, "image": "images/icons/javascript.png" }
-          ]
-        },
-        {
-          "category": "Frameworks",
-          "items": [
-            { "name": "Flask", "level": 8, "image": "images/icons/flask.png" },
-            { "name": "Vue.js", "level": 5, "image": "images/icons/vue.png" }
-          ]
-        },
-        {
-          "category": "Bases de datos",
-          "items": [
-            { "name": "Postgres", "level": 7, "image": "images/icons/postgres.png" },
-            { "name": "SQL", "level": 7, "image": "images/icons/sql.png" },
-            { "name": "Dynamics (CRM)", "level": 6, "image": "images/icons/dynamics.png" }
-          ]
-        },
-        {
-          "category": "Cloud - Azure",
-          "items": [
-            { "name": "Azure Blob Storage", "level": 8, "image": "images/icons/azure_blob.png" },
-            { "name": "Azure Web Apps", "level": 6, "image": "images/icons/azure_webapps.png" }
-          ]
-        },
-        {
-          "category": "Cloud - Google",
-          "items": [
-            { "name": "firestore", "level": 7, "image": "images/icons/firestore.png" },
-            { "name": "Realtime Database", "level": 6, "image": "images/icons/google_realtime.png" }
-          ]
-        }
-      ]
+  "languages": ["es", "en"],
+  "default_language": "es",
+  "command":"$ wget -P ~/downloads resume.pdf",
+  "profile": {
+    "name": "Santiago Murillo Ossa",
+    "title": {
+      "es": "Ingeniero en Sistemas y Computación",
+      "en": "Software Engineer"
     },
-    "en": {
-      "name": "Santiago Murillo Ossa",
-      "title": "Software Engineer",
-      "email": "murillosantiago157@gmail.com",
-      "website": "https://sanmossa.org",
-      "summary": "Software engineer with experience in backend development, cloud service integrations and technical leadership for mobile projects. Currently Development Manager at PartnerHelper: I lead the delivery of an iOS app to streamline medical appointments, design and maintain the backend with Azure Blob Storage and Microsoft CRM integrations, and coordinate AI agent development based on Azure-hosted LLMs. I specialize in Python and Flask with a focus on scalable solutions, solid deployment practices and collaborative work.",
-      "labels": {
-        "experience": "Experience",
-        "education": "Education",
-        "skills": "Skills",
-        "visual_note_prefix": "Inspired by the",
-        "visual_note_link": "ancv",
-        "visual_note_href": "https://github.com/alexpovel/ancv",
-        "language_name": "English",
-        "language_toggle": "Change language",
-        "theme_toggle": "Toggle theme"
-      },
-      "social": [
-        { "network": "LinkedIn", "handle": "", "url": "" },
-        { "network": "GitHub", "handle": "SANMOSSA", "url": "https://github.com/SANMOSSA" }
-      ],
-      "experiences": [
-        {
-          "company": "PartnerHelper",
-          "role": "Development Manager",
-          "location": "Remote",
-          "start": "December 2025",
-          "end": "Present",
-          "image": "images/partnerhelper.png",
-          "icon": "work",
-          "description": "Led the development of the iOS application and backend ecosystem. Coordinated the team and deliverables, handling cloud integrations and the deployment of AI agents.",
-          "bullets": [
-            { "icon": "phone_iphone", "item": "Guide the delivery of the iOS app that streamlines medical appointments." },
-            { "icon": "cloud_upload", "item": "Design and manage the backend with Azure Blob Storage and Microsoft CRM integrations." },
-            { "icon": "smart_toy", "item": "Oversee the development of AI agents powered by LLMs on Azure." },
-            { "icon": "group", "item": "Coordinate cross-functional teams and continuous deployment workflows." }
-          ]
-        },
-        {
-          "company": "PartnerHelper",
-          "role": "Application Engineer",
-          "location": "Remote",
-          "start": "March 2024",
-          "end": "December 2025",
-          "image": "images/partnerhelper.png",
-          "icon": "work",
-          "description": "Backend developer focused on Azure integrations and iOS app support.",
-          "bullets": [
-            { "icon": "code", "item": "Developed and maintained backend services and APIs for the iOS application." },
-            { "icon": "cloud_upload", "item": "Implemented Microsoft CRM integrations and Azure Blob Storage workflows." },
-            { "icon": "integration_instructions", "item": "Collaborated on service architecture and deployment practices." }
-          ]
-        },
-        {
-          "company": "José Jarsmillo Villegas (independent contractor)",
-          "role": "Development Assistant",
-          "location": "Remote",
-          "start": "August 2023",
-          "end": "March 2024",
-          "icon": "person",
-          "description": "Contracted backend work related to the application, including all compliant legal processes.",
-          "bullets": [
-            { "icon": "code", "item": "Delivered backend features for the application." },
-            { "icon": "gavel", "item": "Supported legal and contractual tasks tied to the engagement." },
-            { "icon": "build", "item": "Implemented and maintained backend services." }
-          ]
-        }
-      ],
-      "education": [
-        {
-          "institution": "Universidad Tecnológica de Pereira",
-          "degree": "BSc in Systems and Computing Engineering",
-          "start": "January 2020",
-          "end": "February 2025",
-          "status": "Graduated"
-        },
-        {
-          "institution": "Universidad Tecnológica de Pereira",
-          "degree": "MSc in Artificial Intelligence and Data Science",
-          "start": "August 2025",
-          "end": "Present",
-          "status": "In progress"
-        }
-      ],
-      "skills": [
-        {
-          "category": "Languages / Tools",
-          "items": [
-            { "name": "Python", "level": 8, "image": "images/icons/python.png" },
-            { "name": "Docker", "level": 6, "image": "images/icons/docker.png" },
-            { "name": "Git", "level": 6, "image": "images/icons/git.png" },
-            { "name": "HTML", "level": 5, "image": "images/icons/html.png" },
-            { "name": "CSS", "level": 5, "image": "images/icons/css.png" },
-            { "name": "JavaScript", "level": 5, "image": "images/icons/javascript.png" }
-          ]
-        },
-        {
-          "category": "Frameworks",
-          "items": [
-            { "name": "Flask", "level": 8, "image": "images/icons/flask.png" },
-            { "name": "Vue.js", "level": 5, "image": "images/icons/vue.png" }
-          ]
-        },
-        {
-          "category": "Databases",
-          "items": [
-            { "name": "Postgres", "level": 7, "image": "images/icons/postgres.png" },
-            { "name": "SQL", "level": 7, "image": "images/icons/sql.png" },
-            { "name": "Dynamics (CRM)", "level": 6, "image": "images/icons/dynamics.png" }
-          ]
-        },
-        {
-          "category": "Cloud - Azure",
-          "items": [
-            { "name": "Azure Blob Storage", "level": 8, "image": "images/icons/azure_blob.png" },
-            { "name": "Azure Web Apps", "level": 6, "image": "images/icons/azure_webapps.png" }
-          ]
-        },
-        {
-          "category": "Cloud - Google",
-          "items": [
-            { "name": "Firebase", "level": 7, "image": "images/icons/firebase.png" },
-            { "name": "Google Realtime Database", "level": 6, "image": "images/icons/google_realtime.png" }
-          ]
-        }
-      ]
+    "email": "murillosantiago157@gmail.com",
+    "website": "https://sanmossa.org",
+    "summary": {
+      "es": "Ingeniero en sistemas con sólida experiencia en desarrollo backend, integración de servicios en la nube y dirección técnica de proyectos móviles. Actualmente me desempeño como *Development Manager* en PartnerHelper, liderando el desarrollo de una aplicación iOS para la gestión eficiente de citas médicas mediante el uso de IA, diseñando y manteniendo el backend con integraciones en Azure y Microsoft Dynamics, y coordinando el desarrollo de agentes de inteligencia artificial basados en *Large Language Models* (LLMs) en Azure.\n\nPoseo competencias avanzadas en Python y Flask, con enfoque en la implementación de soluciones escalables, seguras y alineadas con buenas prácticas de despliegue. He trabajado en proyectos de procesamiento de lenguaje natural, transcripción de audio y generación de voz sintética, así como en el diseño de agentes conversacionales (voz, texto y chat) orientados a la adquisición y soporte de clientes, integrando soluciones de IA en sistemas internos corporativos. \n\nAdicionalmente, he desarrollado aplicaciones de automatización para la optimización de procesos personales y organizacionales, incluyendo sistemas de gestión de laboratorios de cómputo. Me caracterizo por mis habilidades analíticas, capacidad de resolución de problemas, adaptabilidad a nuevas tecnologías y compromiso con la entrega de soluciones efectivas y escalables. Soy hablante nativo de español y cuento con nivel intermedio de inglés.",
+      "en": "Software Engineer with strong experience in backend development, cloud service integration, and technical leadership of mobile projects. Currently serving as a Development Manager at PartnerHelper, leading the development of an iOS application for efficient medical appointment management using AI, designing and maintaining the backend with Azure and Microsoft Dynamics integrations, and coordinating the development of AI agents powered by Large Language Models (LLMs) in Azure.\n\nI possess advanced skills in Python and Flask, focusing on implementing scalable, secure solutions aligned with best deployment practices. I have worked on projects involving natural language processing, audio transcription, and synthetic voice generation, as well as designing conversational agents (voice, text, and chat) aimed at customer acquisition and support, integrating AI solutions into corporate internal systems.\n\nAdditionally, I have developed automation applications to optimize personal and organizational processes, including computer lab management systems. I am characterized by my analytical skills, problem-solving ability, adaptability to new technologies, and commitment to delivering effective and scalable solutions. I am a native Spanish speaker with intermediate English proficiency."
     }
   },
-  "visual": {
-    "dark": {
-      "background": "#0f1720",
-      "panel": "linear-gradient(180deg, rgba(255,255,255,0.01), rgba(0,0,0,0.03))",
-      "text": "#cbd5e1",
-      "muted": "#8a7aa0",
-      "accent": "#d18b46",
-      "role": "#9bcf84",
-      "line": "rgba(209,139,70,0.12)"
+  "social": [
+    {
+      "network": "LinkedIn",
+      "handle": "",
+      "url": ""
     },
-    "light": {
-      "background": "#f5f7fb",
-      "panel": "linear-gradient(180deg, rgba(0,0,0,0.03), rgba(255,255,255,0.6))",
-      "text": "#1e293b",
-      "muted": "#64748b",
-      "accent": "#d18b46",
-      "role": "#2f855a",
-      "line": "rgba(209,139,70,0.18)"
+    {
+      "network": "GitHub",
+      "handle": "SANMOSSA",
+      "url": "https://github.com/SANMOSSA"
     }
-  }
+  ],
+  "labels": {
+    "experience": {
+      "es": "Experiencia",
+      "en": "Experience"
+    },
+    "education": {
+      "es": "Educación",
+      "en": "Education"
+    },
+    "skills": {
+      "es": "Habilidades",
+      "en": "Skills"
+    },
+    "language_name": {
+      "es": "Español",
+      "en": "English"
+    },
+    "language_toggle": {
+      "es": "Cambiar idioma",
+      "en": "Change language"
+    },
+    "theme_toggle": {
+      "es": "Cambiar tema",
+      "en": "Toggle theme"
+    },
+    "visual_note_prefix": {
+      "es": "Basado en el estilo del repositorio",
+      "en": "Inspired by the"
+    },
+    "visual_note_link": "ancv",
+    "visual_note_href": "https://github.com/alexpovel/ancv"
+  },
+  "experiences": [
+    {
+      "company": "PartnerHelper",
+      "role": {
+        "es": "Development Manager",
+        "en": "Development Manager"
+      },
+      "location": {
+        "es": "Remoto",
+        "en": "Remote"
+      },
+      "start": {
+        "es": "Diciembre 2025",
+        "en": "December 2025"
+      },
+      "end": {
+        "es": "Presente",
+        "en": "Present"
+      },
+      "image": "images/partnerhelper.png",
+      "icon": "work",
+      "description": {
+        "es": "Gestión y dirección del desarrollo de la aplicación iOS y del ecosistema backend. Coordinación de equipo, planificación y entregables; integración con servicios en la nube y despliegue de agentes de IA.",
+        "en": "Led the development of the iOS application and backend ecosystem. Coordinated the team and deliverables, handling cloud integrations and deployment of AI agents."
+      },
+      "bullets": [
+        {
+          "icon": "phone_iphone",
+          "item": {
+            "es": "Lidero el desarrollo y la entrega de la aplicación iOS para agilizar citas médicas.",
+            "en": "Lead the delivery of the iOS app that streamlines medical appointments."
+          }
+        },
+        {
+          "icon": "cloud_upload",
+          "item": {
+            "es": "Diseño y gestiono el backend con integraciones en Azure Blob Storage y tablas CRM de Microsoft.",
+            "en": "Design and manage the backend with Azure Blob Storage and Microsoft CRM integrations."
+          }
+        },
+        {
+          "icon": "smart_toy",
+          "item": {
+            "es": "Dirijo el desarrollo de agentes de inteligencia artificial basados en LLMs en Azure.",
+            "en": "Oversee the development of AI agents powered by LLMs in Azure."
+          }
+        },
+        {
+          "icon": "group",
+          "item": {
+            "es": "Coordinación de equipos y procesos de despliegue continuo.",
+            "en": "Coordinate cross-functional teams and continuous deployment workflows."
+          }
+        }
+      ]
+    },
+    {
+      "company": "PartnerHelper",
+      "role": {
+        "es": "Ingeniero de Aplicaciones",
+        "en": "Application Engineer"
+      },
+      "location": {
+        "es": "Remoto",
+        "en": "Remote"
+      },
+      "start": {
+        "es": "Mayo 2024",
+        "en": "May 2024"
+      },
+      "end": {
+        "es": "Diciembre 2025",
+        "en": "December 2025"
+      },
+      "image": "images/partnerhelper.png",
+      "icon": "work",
+      "description": {
+        "es": "Desarrollador backend enfocado en integración con Azure y soporte de la app iOS.",
+        "en": "Backend developer focused on Azure integrations and iOS app support."
+      },
+      "bullets": [
+        {
+          "icon": "code",
+          "item": {
+            "es": "Desarrollo y mantenimiento del backend y APIs para la aplicación iOS.",
+            "en": "Developed and maintained backend services and APIs for the iOS app."
+          }
+        },
+        {
+          "icon": "cloud_upload",
+          "item": {
+            "es": "Implementación de integraciones con Microsoft CRM y Azure Blob Storage.",
+            "en": "Implemented Microsoft CRM integrations and Azure Blob Storage workflows."
+          }
+        },
+        {
+          "icon": "integration_instructions",
+          "item": {
+            "es": "Colaboración en la arquitectura de servicios y despliegues.",
+            "en": "Collaborated on service architecture and deployments."
+          }
+        }
+      ]
+    },
+    {
+      "company": "Universidad Tecnológica de Pereira",
+      "role": {
+        "es": "Soporte Tecnico",
+        "en": "Technical Support"
+      },
+      "location": {
+        "es": "Presencial",
+        "en": "Presential"
+      },
+      "start": {
+        "es": "Agosto 2024",
+        "en": "August 2024"
+      },
+      "end": {
+        "es": "Diciembre 2024",
+        "en": "December 2024"
+      },
+      "image": "images/utp.png",
+      "icon": "school",
+      "description": {
+        "es": "Trabajo contratado para desarrollo de un aplicativo web de gestion de salas de computo y el control de los objetos perdidos en ellas.",
+        "en": "Contracted work for the development of an web application to manage computer labs and control lost items within them."
+      },
+      "bullets": [
+        {
+          "icon": "code",
+          "item": {
+            "es": "Desarrollo de funcionalidades backend para la aplicación.",
+            "en": "Delivered backend features for the application."
+          }
+        },
+        {
+          "icon": "code",
+          "item": {
+            "es": "Desarrollo de funcionalidades frontend para la aplicación.",
+            "en": "Delivered frontend features for the application."
+          }
+        },
+        {
+          "icon": "build",
+          "item": {
+            "es": "Implementación y mantenimiento.",
+            "en": "Implemented and maintained."
+          }
+        }
+      ]
+    },
+    {
+      "company": "José Jaramillo Villegas",
+      "role": {
+        "es": "Auxiliar de Desarrollo",
+        "en": "Development Assistant"
+      },
+      "location": {
+        "es": "Remoto",
+        "en": "Remote"
+      },
+      "start": {
+        "es": "Marzo 2023",
+        "en": "March 2023"
+      },
+      "end": {
+        "es": "Mayo 2024",
+        "en": "May 2024"
+      },
+      "icon": "person",
+      "description": {
+        "es": "Trabajo contratado para desarrollo backend relacionado con la aplicación; contratado con todos los procesos legales correspondientes.",
+        "en": "Contracted backend work related to the application, including all legal processes."
+      },
+      "bullets": [
+        {
+          "icon": "code",
+          "item": {
+            "es": "Desarrollo de funcionalidades backend para la aplicación.",
+            "en": "Delivered backend features for the application."
+          }
+        },
+        {
+          "icon": "gavel",
+          "item": {
+            "es": "Soporte en procesos legales y contractuales relacionados con el encargo.",
+            "en": "Supported legal and contractual tasks tied to the engagement."
+          }
+        },
+        {
+          "icon": "build",
+          "item": {
+            "es": "Implementación y mantenimiento de servicios backend.",
+            "en": "Implemented and maintained backend services."
+          }
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universidad Tecnológica de Pereira",
+      "degree": {
+        "es": "Maestría en Inteligencia Artificial y Ciencia de Datos (Sistemas y Computación)",
+        "en": "MSc in Artificial Intelligence and Data Science"
+      },
+      "start": {
+        "es": "Agosto 2025",
+        "en": "August 2025"
+      },
+      "end": {
+        "es": "Presente",
+        "en": "Present"
+      },
+      "status": {
+        "es": "Cursando",
+        "en": "In progress"
+      }
+    },
+    {
+      "institution": "Universidad Tecnológica de Pereira",
+      "degree": {
+        "es": "Ingeniería de Sistemas y Computación",
+        "en": "BSc in Systems and Computing Engineering"
+      },
+      "start": {
+        "es": "Enero 2020",
+        "en": "January 2020"
+      },
+      "end": {
+        "es": "Febrero 2025",
+        "en": "February 2025"
+      },
+      "status": {
+        "es": "Graduado",
+        "en": "Graduated"
+      }
+    }
+  ],
+  "skills": [
+    
+    {
+      "category": {
+        "es": "Inteligencia Artificial",
+        "en": "Artificial Intelligence"
+      },
+      "items": [
+        { "name": "Large Language Models (LLMs)", "level": 9, "image": null },
+        {
+          "name": "Automatic Speech Recognition (ASR)",
+          "level": 8,
+          "image": null
+        },
+        { "name": "Text-to-Speech (TTS)", "level": 8, "image": null }
+      ]
+    },
+    {
+      "category": {
+        "es": "Lenguajes",
+        "en": "Languages"
+      },
+      "items": [
+        { "name": "Python", "level": 8, "image": "images/icons/python.png" },
+        { "name": "HTML", "level": 5, "image": "images/icons/html.png" },
+        { "name": "CSS", "level": 5, "image": "images/icons/css.png" },
+        {
+          "name": "JavaScript",
+          "level": 5,
+          "image": "images/icons/javascript.png"
+        }
+      ]
+    },
+    
+    {
+      "category": {
+        "es": "Frameworks y librerias",
+        "en": "Frameworks and libraries"
+      },
+      "items": [
+        { "name": "Flask", "level": 8, "image": "images/icons/flask.png" },
+        { "name": "Vue.js", "level": 5, "image": "images/icons/vue.png" }
+      ]
+    },
+    
+    {
+      "category": {
+        "es": "Bases de datos",
+        "en": "Databases"
+      },
+      "items": [
+        {
+          "name": "PostgresSQL",
+          "level": 7,
+          "image": "images/icons/postgres.png"
+        },
+        { "name": "SQL", "level": 7, "image": "images/icons/sql.png" },
+        {
+          "name": "Dynamics (CRM)",
+          "level": 6,
+          "image": "images/icons/dynamics.png"
+        }
+      ]
+    },
+    {
+      "category": {
+        "es": "Herramientas",
+        "en": "Tools"
+      },
+      "items": [
+        { "name": "Git", "level": 6, "image": "images/icons/git.png" },
+        { "name": "Postman", "level": 6, "image": "images/icons/postman.png" },
+        { "name": "Docker", "level": 5, "image": "images/icons/docker.png" }
+      ]
+    },
+    {
+      "category": {
+        "es": "Cloud - Azure - Microsoft",
+        "en": "Cloud - Azure - Microsoft"
+      },
+      "items": [
+        {
+          "name": "Azure AI Foundry ",
+          "level": 8,
+          "image": "images/icons/azure_ai_foundry.png"
+        },
+        {
+          "name": "Azure Blob Storage",
+          "level": 8,
+          "image": "images/icons/azure_blob.png"
+        },
+        {
+          "name": "Azure Web Apps",
+          "level": 6,
+          "image": "images/icons/azure_webapps.png"
+        },
+        {
+          "name": "Power Automate",
+          "level": 6,
+          "image": "images/icons/power_automate.png"
+        }
+      ]
+    },
+    {
+      "category": {
+        "es": "Cloud - Google",
+        "en": "Cloud - Google"
+      },
+      "items": [
+        {
+          "name": "Firestore",
+          "level": 7,
+          "image": "images/icons/firestore.png"
+        },
+        {
+          "name": "Realtime Database",
+          "level": 6,
+          "image": "images/icons/google_realtime.png"
+        }
+      ]
+    }
+  ]
 }

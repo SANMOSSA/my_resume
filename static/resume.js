@@ -1,315 +1,320 @@
 (function(){
   const bundle = window.resumeBundle || {};
-  const languages = bundle.languages || {};
-  let activeLang = bundle.defaultLanguage || Object.keys(languages)[0];
-  if(!activeLang) return;
+  const dataset = bundle.data || {};
+  const rawLanguages = bundle.languages || dataset.languages || [];
+  const defaultLanguage = bundle.defaultLanguage || dataset.default_language || rawLanguages[0] || 'es';
+  const localeList = rawLanguages.length ? rawLanguages : [defaultLanguage];
+  const languageLabels = bundle.languageLabels || {};
+  const staticBase = bundle.staticBase || '';
 
-  function getLangData(code){
-    return languages[code] || languages[bundle.defaultLanguage] || Object.values(languages)[0];
+  function isTranslationObject(value){
+    if(!value || typeof value !== 'object' || Array.isArray(value)) return false;
+    const keys = Object.keys(value);
+    if(!keys.length) return false;
+    return keys.every(key => localeList.includes(key));
   }
 
-  function buildEducation(data){
-    return (data.education || []).map(entry => ({
-      ...entry,
-      status: entry.status || ''
-    }));
+  function translateNode(node, lang){
+    if(Array.isArray(node)){
+      return node.map(item => translateNode(item, lang));
+    }
+    if(node && typeof node === 'object'){
+      if(isTranslationObject(node)){
+        const order = [lang, defaultLanguage, localeList[0]].filter(Boolean);
+        for(const code of order){
+          if(node[code] !== undefined){
+            return translateNode(node[code], lang);
+          }
+        }
+        const fallbackKey = Object.keys(node)[0];
+        return translateNode(node[fallbackKey], lang);
+      }
+      const result = {};
+      for(const [key, value] of Object.entries(node)){
+        result[key] = translateNode(value, lang);
+      }
+      return result;
+    }
+    return node;
   }
 
-  function buildState(code){
-    const langData = getLangData(code);
-    if(!langData) return null;
+  function buildState(lang){
     return {
-      lang: code,
-      data: langData,
-      education: buildEducation(langData)
+      lang,
+      data: translateNode(dataset, lang)
     };
   }
 
-  let state = buildState(activeLang);
-  if(!state) return;
-
-  function csvEscape(value){
-    if(value === null || value === undefined) return '""';
-    const s = String(value);
-    return '"' + s.replace(/"/g, '""') + '"';
-  }
-
-  function generateCSV(langData){
-    const headers = ['section','title','subtitle','start','end','location','content','bullets','image','level','category'];
-    const lines = [];
-    lines.push(headers.map(csvEscape).join(','));
-
-    lines.push([
-      csvEscape('profile'),
-      csvEscape(langData.name),
-      csvEscape(langData.title),
-      csvEscape(''),
-      csvEscape(''),
-      csvEscape(''),
-      csvEscape(`${langData.email} | ${langData.website}`),
-      csvEscape(''),
-      csvEscape(''),
-      csvEscape(''),
-      csvEscape('')
-    ].join(','));
-
-    (langData.experiences || []).forEach(exp => {
-      const bulletsJson = JSON.stringify(exp.bullets || []);
-      lines.push([
-        csvEscape('experience'),
-        csvEscape(exp.company),
-        csvEscape(exp.role),
-        csvEscape(exp.start),
-        csvEscape(exp.end),
-        csvEscape(exp.location),
-        csvEscape(exp.description),
-        csvEscape(bulletsJson),
-        csvEscape(exp.image || ''),
-        csvEscape(''),
-        csvEscape('')
-      ].join(','));
-    });
-
-    (langData.education || []).forEach(ed => {
-      lines.push([
-        csvEscape('education'),
-        csvEscape(ed.institution),
-        csvEscape(ed.degree),
-        csvEscape(ed.start),
-        csvEscape(ed.end),
-        csvEscape(''),
-        csvEscape(''),
-        csvEscape(JSON.stringify(ed.courses || [])),
-        csvEscape(''),
-        csvEscape(''),
-        csvEscape('')
-      ].join(','));
-    });
-
-    (langData.skills || []).forEach(cat => {
-      (cat.items || []).forEach(it => {
-        lines.push([
-          csvEscape('skill'),
-          csvEscape(it.name),
-          csvEscape(''),
-          csvEscape(''),
-          csvEscape(''),
-          csvEscape(''),
-          csvEscape(''),
-          csvEscape(''),
-          csvEscape(it.image || ''),
-          csvEscape(it.level !== undefined ? it.level : ''),
-          csvEscape(cat.category || '')
-        ].join(','));
-      });
-    });
-
-    return lines.join('\n');
-  }
-
   function setFlagClass(code){
-    return code.startsWith('es') ? 'flag-es' : 'flag-en';
+    if(!code) return 'flag-en';
+    if(code.toLowerCase().startsWith('es')) return 'flag-es';
+    if(code.toLowerCase().startsWith('en')) return 'flag-en';
+    return 'flag-en';
   }
+
+  let state = null;
+  const dom = {};
 
   document.addEventListener('DOMContentLoaded', () => {
-    const langToggle = document.getElementById('langToggle');
-    const langMenu = document.getElementById('langMenu');
-    const themeToggle = document.getElementById('themeToggle');
-    const body = document.body;
+    dom.name = document.querySelector('.name');
+    dom.role = document.querySelector('.role');
+    dom.contact = document.getElementById('contactSection');
+    dom.summary = document.getElementById('summaryText');
+    dom.experienceTitle = document.getElementById('experienceTitle');
+    dom.educationTitle = document.getElementById('educationTitle');
+    dom.skillsTitle = document.getElementById('skillsTitle');
+    dom.experienceSection = document.getElementById('experienceSection');
+    dom.educationSection = document.getElementById('educationSection');
+    dom.skillsSection = document.getElementById('skillsSection');
+    dom.visualNotePrefix = document.getElementById('visualNotePrefix');
+    dom.visualNoteLink = document.getElementById('visualNoteLink');
+    dom.langToggle = document.getElementById('langToggle');
+    dom.langMenu = document.getElementById('langMenu');
+    dom.themeToggle = document.getElementById('themeToggle');
+    dom.themeSun = dom.themeToggle ? dom.themeToggle.querySelector('.sun') : null;
+    dom.themeMoon = dom.themeToggle ? dom.themeToggle.querySelector('.moon') : null;
+    dom.body = document.body;
 
-    const contactSection = document.getElementById('contactSection');
-    const summaryText = document.getElementById('summaryText');
-    const experienceSection = document.getElementById('experienceSection');
-    const educationSection = document.getElementById('educationSection');
-    const skillsSection = document.getElementById('skillsSection');
-    const experienceTitle = document.getElementById('experienceTitle');
-    const educationTitle = document.getElementById('educationTitle');
-    const skillsTitle = document.getElementById('skillsTitle');
-    const visualNotePrefix = document.getElementById('visualNotePrefix');
-    const visualNoteLink = document.getElementById('visualNoteLink');
-    const themeSun = themeToggle.querySelector('.sun');
-    const themeMoon = themeToggle.querySelector('.moon');
+    state = buildState(defaultLanguage);
+    renderLanguage();
+    setupLanguageEvents();
+    setupThemeToggle();
+  });
 
-    function renderLanguage(nextState){
-      state = nextState;
-      const langData = state.data;
-      document.querySelector('.name').textContent = langData.name;
-      document.querySelector('.role').textContent = langData.title;
+  function renderLanguage(){
+    if(!state) return;
+    const langData = state.data || {};
+    const profile = langData.profile || {};
+    const labels = langData.labels || {};
 
-      contactSection.innerHTML = '';
-      const emailLink = document.createElement('a');
-      emailLink.href = `mailto:${langData.email}`;
-      emailLink.className = 'muted';
-      emailLink.textContent = langData.email;
-      contactSection.appendChild(emailLink);
+    if(dom.name) dom.name.textContent = profile.name || '';
+    if(dom.role) dom.role.textContent = profile.title || '';
 
-      if(langData.website){
-        const sep = document.createElement('span');
-        sep.className = 'sep';
-        sep.textContent = '•';
-        contactSection.appendChild(sep);
-
+    if(dom.contact){
+      dom.contact.innerHTML = '';
+      if(profile.email){
+        const emailLink = document.createElement('a');
+        emailLink.href = `mailto:${profile.email}`;
+        emailLink.className = 'muted';
+        emailLink.textContent = profile.email;
+        dom.contact.appendChild(emailLink);
+      }
+      const website = profile.website;
+      if(website){
+        if(dom.contact.children.length){
+          const sep = document.createElement('span');
+          sep.className = 'sep';
+          sep.textContent = '•';
+          dom.contact.appendChild(sep);
+        }
         const websiteLink = document.createElement('a');
-        websiteLink.href = langData.website;
+        websiteLink.href = website;
         websiteLink.target = '_blank';
         websiteLink.rel = 'noopener';
         websiteLink.className = 'muted';
-        websiteLink.textContent = langData.website.replace(/^https?:\/\//,'');
-        contactSection.appendChild(websiteLink);
+        websiteLink.textContent = website.replace(/^https?:\/\//, '');
+        dom.contact.appendChild(websiteLink);
       }
-
       (langData.social || []).forEach(item => {
         if(!item.url) return;
-        const sep = document.createElement('span');
-        sep.className = 'sep';
-        sep.textContent = '•';
-        contactSection.appendChild(sep);
-
+        if(dom.contact.children.length){
+          const sep = document.createElement('span');
+          sep.className = 'sep';
+          sep.textContent = '•';
+          dom.contact.appendChild(sep);
+        }
         const link = document.createElement('a');
         link.href = item.url;
         link.target = '_blank';
         link.rel = 'noopener';
         link.className = 'muted';
-        link.textContent = item.network;
-        contactSection.appendChild(link);
+        link.textContent = item.handle || item.network;
+        dom.contact.appendChild(link);
       });
-
-      summaryText.textContent = langData.summary;
-
-      experienceTitle.textContent = langData.labels.experience;
-      educationTitle.textContent = langData.labels.education;
-      skillsTitle.textContent = langData.labels.skills;
-      visualNotePrefix.textContent = langData.labels.visual_note_prefix;
-      visualNoteLink.textContent = langData.labels.visual_note_link;
-      visualNoteLink.href = langData.labels.visual_note_href || visualNoteLink.href;
-      langToggle.querySelector('.toggle-label').textContent = langData.labels.language_name;
-      langToggle.setAttribute('aria-label', langData.labels.language_toggle);
-      themeToggle.querySelector('.sr-only').textContent = langData.labels.theme_toggle;
-
-      experienceSection.innerHTML = '';
-      (langData.experiences || []).forEach(exp => {
-        const article = document.createElement('article');
-        article.className = 'job';
-        const logoMarkup = exp.image
-          ? `<img class="job-logo" src="${bundle.staticBase}${exp.image}" alt="${exp.company} logo">`
-          : `<span class="icon material-icons">${exp.icon || 'work'}</span>`;
-        article.innerHTML = `
-          <div class="job-left">
-            <div class="job-head">
-              ${logoMarkup}
-              <div>
-                <div class="company">${exp.company}</div>
-                <div class="position">${exp.role}</div>
-              </div>
-            </div>
-            <p class="job-desc">${exp.description}</p>
-            <ul class="bullets">
-              ${(exp.bullets || []).map(b => `<li><span class="material-icons">${b.icon}</span>${b.item}</li>`).join('')}
-            </ul>
-          </div>
-          <div class="job-right">
-            <div class="dates">${exp.start} — ${exp.end}</div>
-            <div class="location">${exp.location || ''}</div>
-          </div>
-        `;
-        experienceSection.appendChild(article);
-      });
-
-      educationSection.innerHTML = '';
-      (langData.education || []).forEach(ed => {
-        const wrapper = document.createElement('div');
-        wrapper.className = 'edu';
-        wrapper.innerHTML = `
-          <div class="edu-left">
-            <div class="institution">${ed.institution}</div>
-            <div class="degree">${ed.degree}</div>
-          </div>
-          <div class="edu-right">
-            <div class="dates">${ed.start} — ${ed.end}</div>
-            ${ed.status ? `<div class="status muted">${ed.status}</div>` : ''}
-          </div>
-        `;
-        educationSection.appendChild(wrapper);
-      });
-
-      skillsSection.innerHTML = '';
-      (langData.skills || []).forEach(cat => {
-        const block = document.createElement('div');
-        block.className = 'skill-block';
-        const items = (cat.items || []).map(item => {
-          const level = Math.min(10, Math.max(1, item.level || 0));
-          const width = Math.round((item.level || 0) / 10 * 100);
-          return `
-            <div class="skill">
-              <div class="skill-meta">
-                <div class="label">
-                  ${item.image ? `<img class="skill-icon" src="${bundle.staticBase}${item.image}" alt="${item.name}">` : ''}
-                  <div class="skill-name">${item.name}</div>
-                </div>
-                <div class="skill-level">${item.level}/10</div>
-              </div>
-              <div class="bar" aria-hidden="true">
-                <div class="fill lvl-${level}" style="width:${width}%"></div>
-              </div>
-            </div>
-          `;
-        }).join('');
-        block.innerHTML = `<h3 class="skill-category">${cat.category}</h3>${items}`;
-        skillsSection.appendChild(block);
-      });
-
-      const langButtons = langMenu.querySelectorAll('.dropdown-item');
-      langButtons.forEach(btn => {
-        btn.classList.toggle('active', btn.dataset.lang === state.lang);
-      });
-
-      const flagEl = langToggle.querySelector('.flag-current');
-      flagEl.classList.remove('flag-es', 'flag-en');
-      flagEl.classList.add(setFlagClass(state.lang));
     }
 
-    renderLanguage(state);
-    langToggle.addEventListener('click', () => {
-      const expanded = langToggle.getAttribute('aria-expanded') === 'true';
-      langToggle.setAttribute('aria-expanded', (!expanded).toString());
-      langMenu.classList.toggle('open', !expanded);
-    });
+    if(dom.summary) dom.summary.textContent = profile.summary || '';
+    if(dom.experienceTitle) dom.experienceTitle.textContent = labels.experience || '';
+    if(dom.educationTitle) dom.educationTitle.textContent = labels.education || '';
+    if(dom.skillsTitle) dom.skillsTitle.textContent = labels.skills || '';
 
-    langMenu.addEventListener('click', (event) => {
-      const target = event.target.closest('.dropdown-item');
-      if(!target) return;
-      const code = target.dataset.lang;
-      if(!code || code === state.lang) return;
-      const nextState = buildState(code);
-      if(!nextState) return;
-      renderLanguage(nextState);
-      langToggle.setAttribute('aria-expanded', 'false');
-      langMenu.classList.remove('open');
-    });
+    renderExperiences(langData.experiences || []);
+    renderEducation(langData.education || []);
+    renderSkills(langData.skills || []);
 
-    document.addEventListener('click', event => {
-      if(!langMenu.contains(event.target) && !langToggle.contains(event.target)){
-        langMenu.classList.remove('open');
-        langToggle.setAttribute('aria-expanded', 'false');
+    if(dom.visualNotePrefix) dom.visualNotePrefix.textContent = labels.visual_note_prefix || '';
+    if(dom.visualNoteLink){
+      dom.visualNoteLink.textContent = labels.visual_note_link || '';
+      if(labels.visual_note_href){
+        dom.visualNoteLink.href = labels.visual_note_href;
+      }
+    }
+
+    if(dom.langToggle){
+      const labelEl = dom.langToggle.querySelector('.toggle-label');
+      if(labelEl) labelEl.textContent = labels.language_name || state.lang.toUpperCase();
+      dom.langToggle.setAttribute('aria-label', labels.language_toggle || '');
+      const flagEl = dom.langToggle.querySelector('.flag-current');
+      if(flagEl){
+        flagEl.classList.remove('flag-es', 'flag-en');
+        flagEl.classList.add(setFlagClass(state.lang));
+      }
+    }
+
+    if(dom.themeToggle){
+      const srOnly = dom.themeToggle.querySelector('.sr-only');
+      if(srOnly) srOnly.textContent = labels.theme_toggle || srOnly.textContent;
+    }
+
+    updateLanguageMenuState();
+  }
+
+  function renderExperiences(experiences){
+    if(!dom.experienceSection) return;
+    dom.experienceSection.innerHTML = '';
+    experiences.forEach(exp => {
+      const article = document.createElement('article');
+      article.className = 'job';
+      const logoMarkup = exp.image
+        ? `<img class="job-logo" src="${staticBase}${exp.image}" alt="${exp.company} logo">`
+        : `<span class="icon material-icons">${exp.icon || 'work'}</span>`;
+      const bullets = (exp.bullets || []).map(b => `<li><span class="material-icons">${b.icon}</span>${b.item}</li>`).join('');
+      article.innerHTML = `
+        <div class="job-left">
+          <div class="job-head">
+            ${logoMarkup}
+            <div>
+              <div class="company">${exp.company}</div>
+              <div class="position">${exp.role}</div>
+            </div>
+          </div>
+          <p class="job-desc">${exp.description}</p>
+          <ul class="bullets">${bullets}</ul>
+        </div>
+        <div class="job-right">
+          <div class="dates">${exp.start} — ${exp.end}</div>
+          <div class="location">${exp.location || ''}</div>
+        </div>
+      `;
+      dom.experienceSection.appendChild(article);
+    });
+  }
+
+  function renderEducation(education){
+    if(!dom.educationSection) return;
+    dom.educationSection.innerHTML = '';
+    education.forEach(edu => {
+      const wrapper = document.createElement('div');
+      wrapper.className = 'edu';
+      wrapper.innerHTML = `
+        <div class="edu-left">
+          <div class="institution">${edu.institution}</div>
+          <div class="degree">${edu.degree}</div>
+        </div>
+        <div class="edu-right">
+          <div class="dates">${edu.start} — ${edu.end}</div>
+          ${edu.status ? `<div class="status muted">${edu.status}</div>` : ''}
+        </div>
+      `;
+      dom.educationSection.appendChild(wrapper);
+    });
+  }
+
+  function renderSkills(skills){
+    if(!dom.skillsSection) return;
+    dom.skillsSection.innerHTML = '';
+    skills.forEach(cat => {
+      const block = document.createElement('div');
+      block.className = 'skill-block';
+      const itemsMarkup = (cat.items || []).map(item => {
+        const level = Math.min(10, Math.max(1, item.level || 0));
+        const width = Math.round((item.level || 0) / 10 * 100);
+        const icon = item.image ? `<img class="skill-icon" src="${staticBase}${item.image}" alt="${item.name}">` : '';
+        return `
+          <div class="skill">
+            <div class="skill-meta">
+              <div class="label">
+                ${icon}
+                <div class="skill-name">${item.name}</div>
+              </div>
+              <div class="skill-level">${item.level}/10</div>
+            </div>
+            <div class="bar" aria-hidden="true">
+              <div class="fill lvl-${level}" style="width:${width}%"></div>
+            </div>
+          </div>
+        `;
+      }).join('');
+      block.innerHTML = `<h3 class="skill-category">${cat.category}</h3>${itemsMarkup}`;
+      dom.skillsSection.appendChild(block);
+    });
+  }
+
+  function setupLanguageEvents(){
+    if(!dom.langToggle || !dom.langMenu) return;
+    if(localeList.length > 1){
+      dom.langToggle.addEventListener('click', () => {
+        const expanded = dom.langToggle.getAttribute('aria-expanded') === 'true';
+        dom.langToggle.setAttribute('aria-expanded', (!expanded).toString());
+        dom.langMenu.classList.toggle('open', !expanded);
+      });
+
+      dom.langMenu.addEventListener('click', event => {
+        const target = event.target.closest('.dropdown-item');
+        if(!target) return;
+        const code = target.dataset.lang;
+        if(!code || code === state.lang) return;
+        state = buildState(code);
+        renderLanguage();
+        dom.langToggle.setAttribute('aria-expanded', 'false');
+        dom.langMenu.classList.remove('open');
+      });
+
+      document.addEventListener('click', event => {
+        if(!dom.langMenu.contains(event.target) && !dom.langToggle.contains(event.target)){
+          dom.langMenu.classList.remove('open');
+          dom.langToggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    } else {
+      dom.langToggle.setAttribute('aria-disabled', 'true');
+    }
+  }
+
+  function updateLanguageMenuState(){
+    if(!dom.langMenu) return;
+    const buttons = dom.langMenu.querySelectorAll('.dropdown-item');
+    buttons.forEach(btn => {
+      const code = btn.dataset.lang;
+      btn.classList.toggle('active', code === state.lang);
+      const labelSpan = btn.querySelectorAll('span')[1];
+      if(labelSpan){
+        labelSpan.textContent = languageLabels[code] || code.toUpperCase();
       }
     });
+  }
+
+  function setupThemeToggle(){
+    if(!dom.themeToggle) return;
 
     const storedTheme = window.localStorage.getItem('resume-theme');
     if(storedTheme === 'light' || storedTheme === 'dark'){
-      body.dataset.theme = storedTheme;
-      themeToggle.setAttribute('aria-pressed', storedTheme === 'light');
+      dom.body.dataset.theme = storedTheme;
+      dom.themeToggle.setAttribute('aria-pressed', (storedTheme === 'light').toString());
     }
-    themeSun.style.display = body.dataset.theme === 'light' ? 'inline-flex' : 'none';
-    themeMoon.style.display = body.dataset.theme === 'light' ? 'none' : 'inline-flex';
+    updateThemeIcons();
 
-    themeToggle.addEventListener('click', () => {
-      const isLight = body.dataset.theme === 'light';
-      body.dataset.theme = isLight ? 'dark' : 'light';
-      themeToggle.setAttribute('aria-pressed', (!isLight).toString());
-      window.localStorage.setItem('resume-theme', body.dataset.theme);
-      themeSun.style.display = body.dataset.theme === 'light' ? 'inline-flex' : 'none';
-      themeMoon.style.display = body.dataset.theme === 'light' ? 'none' : 'inline-flex';
+    dom.themeToggle.addEventListener('click', () => {
+      const isLight = dom.body.dataset.theme === 'light';
+      dom.body.dataset.theme = isLight ? 'dark' : 'light';
+      dom.themeToggle.setAttribute('aria-pressed', (!isLight).toString());
+      window.localStorage.setItem('resume-theme', dom.body.dataset.theme);
+      updateThemeIcons();
     });
+  }
 
-  });
+  function updateThemeIcons(){
+    if(dom.themeSun) dom.themeSun.style.display = dom.body.dataset.theme === 'light' ? 'inline-flex' : 'none';
+    if(dom.themeMoon) dom.themeMoon.style.display = dom.body.dataset.theme === 'light' ? 'none' : 'inline-flex';
+  }
 })();

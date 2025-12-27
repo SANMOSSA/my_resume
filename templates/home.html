@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="es">
+<html lang="{{ default_language }}">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>{{ data.name }} — {{ data.title }}</title>
+  <title>{{ data.profile.name }} — {{ data.profile.title }}</title>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
@@ -11,7 +11,7 @@
 <body data-theme="dark">
   <main class="panel" role="main">
     <div class="topbar">
-      <div class="cmd">$ curl -L sanmossa.org</div>
+      <div class="cmd">{{data.command}}</div>
       <div class="toggles" role="group" aria-label="{{ data.labels.language_toggle }} / {{ data.labels.theme_toggle }}">
         <div class="lang-switcher">
           <button class="toggle toggle-lang" id="langToggle" aria-haspopup="true" aria-expanded="false" aria-controls="langMenu">
@@ -20,10 +20,10 @@
             <span class="material-icons arrow">expand_more</span>
           </button>
           <div class="dropdown" id="langMenu" role="menu">
-            {% for code, lang in languages.items() %}
+            {% for code in languages %}
             <button class="dropdown-item{% if code == default_language %} active{% endif %}" role="menuitem" data-lang="{{ code }}">
               <span class="flag flag-{{ 'es' if code.startswith('es') else 'en' }}" aria-hidden="true"></span>
-              <span>{{ lang.labels.language_name }}</span>
+              <span>{{ language_labels.get(code, code.upper()) }}</span>
             </button>
             {% endfor %}
           </div>
@@ -39,26 +39,30 @@
     <header class="panel-header">
       <div class="cmd"></div>
       <div class="person">
-        <h1 class="name">{{ data.name }}</h1>
-        <div class="role">{{ data.title }}</div>
+        <h1 class="name">{{ data.profile.name }}</h1>
+        <div class="role">{{ data.profile.title }}</div>
       </div>
     </header>
 
     <section class="contact" id="contactSection">
-      <a href="mailto:{{ data.email }}" class="muted">{{ data.email }}</a>
+      <a href="mailto:{{ data.profile.email }}" class="muted">{{ data.profile.email }}</a>
       <span class="sep">•</span>
-      {% if data.website %}
-        <a href="{{ data.website }}" target="_blank" rel="noopener" class="muted">{{ data.website.replace('https://','').replace('http://','') }}</a>
+      {% if data.profile.website %}
+        {% set clean_website = data.profile.website.replace('https://','').replace('http://','') %}
+        <a href="{{ data.profile.website }}" target="_blank" rel="noopener" class="muted">{{ clean_website }}</a>
       {% endif %}
       {% for s in data.social %}
-        {% if s.url %}<span class="sep">•</span><a href="{{ s.url }}" target="_blank" rel="noopener" class="muted">{{ s.network }}</a>{% endif %}
+        {% if s.url %}
+          <span class="sep">•</span>
+          <a href="{{ s.url }}" target="_blank" rel="noopener" class="muted">{{ s.handle or s.network }}</a>
+        {% endif %}
       {% endfor %}
     </section>
 
     <div class="rule"></div>
 
     <section class="summary" id="summarySection">
-      <p id="summaryText">{{ data.summary }}</p>
+      <p id="summaryText">{{ data.profile.summary }}</p>
     </section>
 
     <section class="section-title"><span id="experienceTitle">{{ data.labels.experience }}</span></section>
@@ -147,13 +151,15 @@
 
     <footer class="panel-footer muted">
       <span id="visualNotePrefix">{{ data.labels.visual_note_prefix }}</span>
-      <a id="visualNoteLink" href="https://github.com/alexpovel/ancv" target="_blank" rel="noopener">{{ data.labels.visual_note_link }}</a>
+      <a id="visualNoteLink" href="{{ data.labels.visual_note_href }}" target="_blank" rel="noopener">{{ data.labels.visual_note_link }}</a>
     </footer>
   </main>
 
   <script>
     window.resumeBundle = {
+      data: {{ raw_data | tojson }},
       languages: {{ languages | tojson }},
+      languageLabels: {{ language_labels | tojson }},
       defaultLanguage: '{{ default_language }}',
       visual: {{ visual | tojson }},
       staticBase: '{{ url_for('static', filename='') }}'
