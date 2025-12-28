@@ -80,11 +80,13 @@
     dom.themeSun = dom.themeToggle ? dom.themeToggle.querySelector('.sun') : null;
     dom.themeMoon = dom.themeToggle ? dom.themeToggle.querySelector('.moon') : null;
     dom.body = document.body;
+    dom.rendercvButton = document.getElementById('rendercvButton');
 
     state = buildState(defaultLanguage);
     renderLanguage();
     setupLanguageEvents();
     setupThemeToggle();
+    setupRendercvButton();
   });
 
   function renderLanguage(){
@@ -381,5 +383,48 @@
   function updateThemeIcons(){
     if(dom.themeSun) dom.themeSun.style.display = dom.body.dataset.theme === 'light' ? 'inline-flex' : 'none';
     if(dom.themeMoon) dom.themeMoon.style.display = dom.body.dataset.theme === 'light' ? 'none' : 'inline-flex';
+  }
+
+  function setupRendercvButton(){
+    if(!dom.rendercvButton) return;
+    dom.rendercvButton.addEventListener('click', async () => {
+      const currentLang = state ? state.lang : defaultLanguage;
+      dom.rendercvButton.disabled = true;
+      dom.rendercvButton.dataset.loading = 'true';
+      try {
+        const response = await fetch('/rendercv', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ language: currentLang })
+        });
+
+        if(!response.ok){
+          throw new Error('RenderCV failed');
+        }
+
+        const blob = await response.blob();
+        const disposition = response.headers.get('Content-Disposition') || '';
+        const filenameMatch = disposition.match(/filename="?([^";]+)"?/i);
+        const filename = filenameMatch ? filenameMatch[1] : `resume_${currentLang || 'es'}.pdf`;
+
+        const url = window.URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = filename;
+        document.body.appendChild(link);
+        link.click();
+        setTimeout(() => {
+          document.body.removeChild(link);
+          window.URL.revokeObjectURL(url);
+        }, 0);
+      } catch (error){
+        console.error('Failed to generate CV', error);
+      } finally {
+        dom.rendercvButton.disabled = false;
+        delete dom.rendercvButton.dataset.loading;
+      }
+    });
   }
 })();

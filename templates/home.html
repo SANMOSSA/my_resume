@@ -11,7 +11,11 @@
 <body data-theme="dark">
   <main class="panel" role="main">
     <div class="topbar">
-      <div class="cmd">{{data.command}}</div>
+      <div class="cmd">
+        {% if data.command %}
+        <button type="button" class="cmd-button" id="rendercvButton">{{ data.command }}</button>
+        {% endif %}
+      </div>
       <div class="toggles" role="group" aria-label="{{ data.labels.language_toggle }} / {{ data.labels.theme_toggle }}">
         <div class="lang-switcher">
           <button class="toggle toggle-lang" id="langToggle" aria-haspopup="true" aria-expanded="false" aria-controls="langMenu">
@@ -185,7 +189,7 @@
       {% endfor %}
     </section>
 
-    <div class="rule"></div>
+    <div class="rule"></div>w
 
     <section class="section-title"><span id="projectsTitle">{{ data.labels.projects }}</span></section>
 

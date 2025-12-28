@@ -1,0 +1,108 @@
+cv:
+  design:
+    theme: engineeringclassic
+  name: Santiago Murillo Ossa
+  headline: Software Engineer
+  email: murillosantiago157@gmail.com
+  website: https://sanmossa.org
+  social_networks:
+  - network: GitHub
+    username: SANMOSSA
+  sections:
+    Summary:
+    - Software Engineer with strong experience in backend development, cloud 
+      service integration, and technical leadership of mobile projects. 
+      Currently serving as a Development Manager at PartnerHelper, leading the 
+      development of an iOS application for efficient medical appointment 
+      management using AI, designing and maintaining the backend with Azure and 
+      Microsoft Dynamics integrations, and coordinating the development of AI 
+      agents powered by Large Language Models (LLMs) in Azure for businesses.
+    - I possess advanced skills in Python and Flask, with a strong focus on 
+      implementing scalable, secure solutions aligned with best deployment 
+      practices. In most of my projects, I apply Object-Oriented Programming 
+      (OOP), SOLID principles, and the Model-View-Controller (MVC) pattern, 
+      ensuring clean, maintainable, and easily scalable architectures.
+    - I have developed projects in natural language processing, audio 
+      transcription, and synthetic voice generation, as well as the design of 
+      conversational agents (voice, text, and chat) focused on customer 
+      acquisition and support through Meta channels and web chats. These 
+      solutions integrate AI into corporate internal systems, optimizing 
+      processes and enhancing the user experience.
+    - Additionally, I have developed automation applications to optimize 
+      personal and organizational processes, including automatic download 
+      systems and repetitive task scripts. I am characterized by my analytical 
+      skills, problem-solving ability, adaptability to new technologies, and 
+      commitment to delivering effective and scalable solutions. I am a native 
+      Spanish speaker with intermediate English proficiency.
+    Experience:
+    - company: PartnerHelper
+      position: Development Manager
+      date: December 2025 — Present
+      location: Remote
+      summary: AI leader, responsible for developing an iOS medical appointment 
+        app with AI and creating AI agents for clients.
+      highlights:
+      - Leader of the development and architecture of an iOS application for 
+        medical appointments.
+      - Integrations and deployments with Azure and Microsoft Dynamics.
+      - Design and deployment of LLM-based AI agents for businesses.
+      - Team coordination and delivery schedule management.
+    - company: PartnerHelper
+      position: Application Engineer
+      date: May 2024 — December 2025
+      location: Remote
+      summary: Backend-focused developer for iOS medical appointment 
+        applications.
+      highlights:
+      - Developed APIs enabling core functionalities in an iOS application
+      - Integrations and deployments with Azure and Microsoft Dynamics.
+      - Collaborated on service architecture and deployments.
+    - company: Universidad Tecnológica de Pereira
+      position: Technical Support (Part-time)
+      date: August 2024 — December 2024
+      location: Presential
+      summary: Developer of an web application to manage computer labs and 
+        control lost items within them.
+      highlights:
+      - Development backend features for the application.
+      - Development frontend features for the application.
+      - Development, deploy and maintained.
+    - company: José Jaramillo Villegas
+      position: Development Assistant
+      date: March 2023 — May 2024
+      location: Remote
+      summary: Auxiliar Backend-focused developer for iOS medical appointment 
+        applications.
+      highlights:
+      - Developed APIs enabling core functionalities in an iOS application
+      - Integrations and deployments with Azure and Microsoft Dynamics.
+    Education:
+    - institution: Universidad Tecnológica de Pereira
+      area: MSc in Artificial Intelligence and Data Science
+      date: August 2025 — Present
+    - institution: Universidad Tecnológica de Pereira
+      area: BSc in Software Engineering
+      degree: Graduated
+      date: January 2020 — February 2025
+    Skills:
+    - label: Artificial Intelligence
+      details: Large Language Models (LLMs), Tools-Calling (LLMs), Automatic 
+        Speech Recognition (ASR), Text-to-Speech (TTS)
+    - label: Languages
+      details: Python, HTML, CSS, JavaScript
+    - label: Frameworks and libraries
+      details: Flask, Vue.js
+    - label: Databases
+      details: PostgresSQL, SQL, Dynamics (CRM)
+    - label: Tools
+      details: Git, Postman, Docker
+    - label: Cloud - Azure - Microsoft
+      details: Azure AI Foundry, Azure Blob Storage, Azure Web Apps, Power 
+        Automate
+    - label: Cloud - Google
+      details: Firestore, Realtime Database
+    Languages:
+    - label: Spanish
+      details: Native
+    - label: English
+      details: B1 Level
