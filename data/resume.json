@@ -1,7 +1,10 @@
 {
-  "languages": ["es", "en"],
+  "languages": [
+    "es",
+    "en"
+  ],
   "default_language": "es",
-  "command":"$ wget -P ~/downloads resume.pdf",
+  "command": "$ wget -P ~/downloads resume.pdf",
   "profile": {
     "name": "Santiago Murillo Ossa",
     "title": {
@@ -11,8 +14,8 @@
     "email": "murillosantiago157@gmail.com",
     "website": "https://sanmossa.org",
     "summary": {
-      "es": "Ingeniero en sistemas con sólida experiencia en desarrollo backend, integración de servicios en la nube y dirección técnica de proyectos móviles. Actualmente me desempeño como *Development Manager* en PartnerHelper, liderando el desarrollo de una aplicación iOS para la gestión eficiente de citas médicas mediante el uso de IA, diseñando y manteniendo el backend con integraciones en Azure y Microsoft Dynamics, y coordinando el desarrollo de agentes de inteligencia artificial basados en *Large Language Models* (LLMs) en Azure.\n\nPoseo competencias avanzadas en Python y Flask, con enfoque en la implementación de soluciones escalables, seguras y alineadas con buenas prácticas de despliegue. He trabajado en proyectos de procesamiento de lenguaje natural, transcripción de audio y generación de voz sintética, así como en el diseño de agentes conversacionales (voz, texto y chat) orientados a la adquisición y soporte de clientes, integrando soluciones de IA en sistemas internos corporativos. \n\nAdicionalmente, he desarrollado aplicaciones de automatización para la optimización de procesos personales y organizacionales, incluyendo sistemas de gestión de laboratorios de cómputo. Me caracterizo por mis habilidades analíticas, capacidad de resolución de problemas, adaptabilidad a nuevas tecnologías y compromiso con la entrega de soluciones efectivas y escalables. Soy hablante nativo de español y cuento con nivel intermedio de inglés.",
-      "en": "Software Engineer with strong experience in backend development, cloud service integration, and technical leadership of mobile projects. Currently serving as a Development Manager at PartnerHelper, leading the development of an iOS application for efficient medical appointment management using AI, designing and maintaining the backend with Azure and Microsoft Dynamics integrations, and coordinating the development of AI agents powered by Large Language Models (LLMs) in Azure.\n\nI possess advanced skills in Python and Flask, focusing on implementing scalable, secure solutions aligned with best deployment practices. I have worked on projects involving natural language processing, audio transcription, and synthetic voice generation, as well as designing conversational agents (voice, text, and chat) aimed at customer acquisition and support, integrating AI solutions into corporate internal systems.\n\nAdditionally, I have developed automation applications to optimize personal and organizational processes, including computer lab management systems. I am characterized by my analytical skills, problem-solving ability, adaptability to new technologies, and commitment to delivering effective and scalable solutions. I am a native Spanish speaker with intermediate English proficiency."
+      "es": "Ingeniero en sistemas con sólida experiencia en desarrollo backend, integración de servicios en la nube y dirección técnica de proyectos móviles. Actualmente me desempeño como Development Manager en PartnerHelper, liderando el desarrollo de una aplicación iOS para la gestión eficiente de citas médicas mediante el uso de IA, diseñando y manteniendo el backend con integraciones en Azure y Microsoft Dynamics, y coordinando el desarrollo de agentes de inteligencia artificial basados en Large Language Models (LLMs) en Azure para empresas.\n\nPoseo competencias avanzadas en Python y Flask, con enfoque en la implementación de soluciones escalables, seguras y alineadas con buenas prácticas de despliegue. En la mayoría de mis proyectos aplico Programación Orientada a Objetos (POO), principios SOLID y el patrón Modelo-Vista-Controlador (MVC), garantizando arquitecturas limpias, mantenibles y fáciles de escalar.\n\nHe desarrollado proyectos de procesamiento de lenguaje natural, transcripción de audio y generación de voz sintética, además del diseño de agentes conversacionales (voz, texto y chat) orientados a la adquisición y soporte de clientes por medio de los canales de Meta y chats webs. Estas soluciones integran IA en sistemas internos corporativos, optimizando procesos y mejorando la experiencia de usuario.\n\nAdicionalmente, he desarrollado aplicaciones de automatización para la optimización de procesos personales y organizacionales, incluyendo sistemas de descargas automaticas y scripts de tareas repetitivas. Me caracterizo por mis habilidades analíticas, capacidad de resolución de problemas, adaptabilidad a nuevas tecnologías y compromiso con la entrega de soluciones efectivas y escalables. Soy hablante nativo de español y cuento con nivel intermedio de inglés.",
+      "en": "Software Engineer with strong experience in backend development, cloud service integration, and technical leadership of mobile projects. Currently serving as a Development Manager at PartnerHelper, leading the development of an iOS application for efficient medical appointment management using AI, designing and maintaining the backend with Azure and Microsoft Dynamics integrations, and coordinating the development of AI agents powered by Large Language Models (LLMs) in Azure for businesses.\n\nI possess advanced skills in Python and Flask, with a strong focus on implementing scalable, secure solutions aligned with best deployment practices. In most of my projects, I apply Object-Oriented Programming (OOP), SOLID principles, and the Model-View-Controller (MVC) pattern, ensuring clean, maintainable, and easily scalable architectures.\n\nI have developed projects in natural language processing, audio transcription, and synthetic voice generation, as well as the design of conversational agents (voice, text, and chat) focused on customer acquisition and support through Meta channels and web chats. These solutions integrate AI into corporate internal systems, optimizing processes and enhancing the user experience.\n\nAdditionally, I have developed automation applications to optimize personal and organizational processes, including automatic download systems and repetitive task scripts. I am characterized by my analytical skills, problem-solving ability, adaptability to new technologies, and commitment to delivering effective and scalable solutions. I am a native Spanish speaker with intermediate English proficiency."
     }
   },
   "social": [
@@ -52,6 +55,18 @@
       "es": "Cambiar tema",
       "en": "Toggle theme"
     },
+    "languages_section": {
+      "es": "Idiomas",
+      "en": "Languages"
+    },
+    "references": {
+      "es": "Referencias laborales",
+      "en": "Professional References"
+    },
+    "projects": {
+      "es": "Proyectos",
+      "en": "Projects"
+    },
     "visual_note_prefix": {
       "es": "Basado en el estilo del repositorio",
       "en": "Inspired by the"
@@ -81,36 +96,36 @@
       "image": "images/partnerhelper.png",
       "icon": "work",
       "description": {
-        "es": "Gestión y dirección del desarrollo de la aplicación iOS y del ecosistema backend. Coordinación de equipo, planificación y entregables; integración con servicios en la nube y despliegue de agentes de IA.",
-        "en": "Led the development of the iOS application and backend ecosystem. Coordinated the team and deliverables, handling cloud integrations and deployment of AI agents."
+        "es": "Líder en inteligencia artificial, responsable del desarrollo de una app iOS de citas médicas con IA y de la creación de agentes de IA para clientes.",
+        "en": "AI leader, responsible for developing an iOS medical appointment app with AI and creating AI agents for clients."
       },
       "bullets": [
         {
           "icon": "phone_iphone",
           "item": {
-            "es": "Lidero el desarrollo y la entrega de la aplicación iOS para agilizar citas médicas.",
-            "en": "Lead the delivery of the iOS app that streamlines medical appointments."
+            "es": "Lider del desarrollo y arquitectura de una aplicación iOS para citas médicas.",
+            "en": "Leader of the development and architecture of an iOS application for medical appointments."
           }
         },
         {
           "icon": "cloud_upload",
           "item": {
-            "es": "Diseño y gestiono el backend con integraciones en Azure Blob Storage y tablas CRM de Microsoft.",
-            "en": "Design and manage the backend with Azure Blob Storage and Microsoft CRM integrations."
+            "es": "Integraciones y desplieges con Azure y Microsoft Dynamics.",
+            "en": "Integrations and deployments with Azure and Microsoft Dynamics."
           }
         },
         {
           "icon": "smart_toy",
           "item": {
-            "es": "Dirijo el desarrollo de agentes de inteligencia artificial basados en LLMs en Azure.",
-            "en": "Oversee the development of AI agents powered by LLMs in Azure."
+            "es": "Diseño y desarrollo de agentes de inteligencia artificial basados en LLMs para empresas.",
+            "en": "Design and deployment of LLM-based AI agents for businesses."
           }
         },
         {
           "icon": "group",
           "item": {
-            "es": "Coordinación de equipos y procesos de despliegue continuo.",
-            "en": "Coordinate cross-functional teams and continuous deployment workflows."
+            "es": "Coordinación de equipos y fechas de entrega.",
+            "en": "Team coordination and delivery schedule management."
           }
         }
       ]
@@ -136,22 +151,22 @@
       "image": "images/partnerhelper.png",
       "icon": "work",
       "description": {
-        "es": "Desarrollador backend enfocado en integración con Azure y soporte de la app iOS.",
-        "en": "Backend developer focused on Azure integrations and iOS app support."
+        "es": "Desarrollador enfocado en el backend de una aplicacion iOS para citas medicas.",
+        "en": "Backend-focused developer for iOS medical appointment applications."
       },
       "bullets": [
         {
           "icon": "code",
           "item": {
-            "es": "Desarrollo y mantenimiento del backend y APIs para la aplicación iOS.",
-            "en": "Developed and maintained backend services and APIs for the iOS app."
+            "es": "Desarrolló de APIs que habilitan funcionalidades clave en una aplicación iOS.",
+            "en": "Developed APIs enabling core functionalities in an iOS application"
           }
         },
         {
           "icon": "cloud_upload",
           "item": {
-            "es": "Implementación de integraciones con Microsoft CRM y Azure Blob Storage.",
-            "en": "Implemented Microsoft CRM integrations and Azure Blob Storage workflows."
+            "es": "Integraciones y desplieges con Azure y Microsoft Dynamics.",
+            "en": "Integrations and deployments with Azure and Microsoft Dynamics."
           }
         },
         {
@@ -166,8 +181,8 @@
     {
       "company": "Universidad Tecnológica de Pereira",
       "role": {
-        "es": "Soporte Tecnico",
-        "en": "Technical Support"
+        "es": "Soporte Tecnico (Parcial)",
+        "en": "Technical Support (Part-time)"
       },
       "location": {
         "es": "Presencial",
@@ -184,29 +199,29 @@
       "image": "images/utp.png",
       "icon": "school",
       "description": {
-        "es": "Trabajo contratado para desarrollo de un aplicativo web de gestion de salas de computo y el control de los objetos perdidos en ellas.",
-        "en": "Contracted work for the development of an web application to manage computer labs and control lost items within them."
+        "es": "Desarrollador de una aplicativo web de gestion de salas de computo y el control de los objetos perdidos en ellas.",
+        "en": "Developer of an web application to manage computer labs and control lost items within them."
       },
       "bullets": [
         {
           "icon": "code",
           "item": {
             "es": "Desarrollo de funcionalidades backend para la aplicación.",
-            "en": "Delivered backend features for the application."
+            "en": "Development backend features for the application."
           }
         },
         {
           "icon": "code",
           "item": {
             "es": "Desarrollo de funcionalidades frontend para la aplicación.",
-            "en": "Delivered frontend features for the application."
+            "en": "Development frontend features for the application."
           }
         },
         {
           "icon": "build",
           "item": {
-            "es": "Implementación y mantenimiento.",
-            "en": "Implemented and maintained."
+            "es": "Desarrollo, despliegue y mantenimiento.",
+            "en": "Development, deploy and maintained."
           }
         }
       ]
@@ -231,29 +246,22 @@
       },
       "icon": "person",
       "description": {
-        "es": "Trabajo contratado para desarrollo backend relacionado con la aplicación; contratado con todos los procesos legales correspondientes.",
-        "en": "Contracted backend work related to the application, including all legal processes."
+        "es": "Desarrollador auxiliar enfocado en el backend de una aplicacion iOS para citas medicas.",
+        "en": "Auxiliar Backend-focused developer for iOS medical appointment applications."
       },
       "bullets": [
         {
           "icon": "code",
           "item": {
-            "es": "Desarrollo de funcionalidades backend para la aplicación.",
-            "en": "Delivered backend features for the application."
+            "es": "Desarrolló de APIs que habilitan funcionalidades clave en una aplicación iOS.",
+            "en": "Developed APIs enabling core functionalities in an iOS application"
           }
         },
         {
-          "icon": "gavel",
+          "icon": "cloud_upload",
           "item": {
-            "es": "Soporte en procesos legales y contractuales relacionados con el encargo.",
-            "en": "Supported legal and contractual tasks tied to the engagement."
-          }
-        },
-        {
-          "icon": "build",
-          "item": {
-            "es": "Implementación y mantenimiento de servicios backend.",
-            "en": "Implemented and maintained backend services."
+            "es": "Integraciones y desplieges con Azure y Microsoft Dynamics.",
+            "en": "Integrations and deployments with Azure and Microsoft Dynamics."
           }
         }
       ]
@@ -283,7 +291,7 @@
       "institution": "Universidad Tecnológica de Pereira",
       "degree": {
         "es": "Ingeniería de Sistemas y Computación",
-        "en": "BSc in Systems and Computing Engineering"
+        "en": "BSc in Software Engineering"
       },
       "start": {
         "es": "Enero 2020",
@@ -300,20 +308,32 @@
     }
   ],
   "skills": [
-    
     {
       "category": {
         "es": "Inteligencia Artificial",
         "en": "Artificial Intelligence"
       },
       "items": [
-        { "name": "Large Language Models (LLMs)", "level": 9, "image": null },
+        {
+          "name": "Large Language Models (LLMs)",
+          "level": 9,
+          "image": null
+        },
+        {
+          "name": "Tools-Calling (LLMs)",
+          "level": 8,
+          "image": null
+        },
         {
           "name": "Automatic Speech Recognition (ASR)",
           "level": 8,
           "image": null
         },
-        { "name": "Text-to-Speech (TTS)", "level": 8, "image": null }
+        {
+          "name": "Text-to-Speech (TTS)",
+          "level": 8,
+          "image": null
+        }
       ]
     },
     {
@@ -322,9 +342,21 @@
         "en": "Languages"
       },
       "items": [
-        { "name": "Python", "level": 8, "image": "images/icons/python.png" },
-        { "name": "HTML", "level": 5, "image": "images/icons/html.png" },
-        { "name": "CSS", "level": 5, "image": "images/icons/css.png" },
+        {
+          "name": "Python",
+          "level": 8,
+          "image": "images/icons/python.png"
+        },
+        {
+          "name": "HTML",
+          "level": 5,
+          "image": "images/icons/html.png"
+        },
+        {
+          "name": "CSS",
+          "level": 5,
+          "image": "images/icons/css.png"
+        },
         {
           "name": "JavaScript",
           "level": 5,
@@ -332,18 +364,24 @@
         }
       ]
     },
-    
     {
       "category": {
         "es": "Frameworks y librerias",
         "en": "Frameworks and libraries"
       },
       "items": [
-        { "name": "Flask", "level": 8, "image": "images/icons/flask.png" },
-        { "name": "Vue.js", "level": 5, "image": "images/icons/vue.png" }
+        {
+          "name": "Flask",
+          "level": 8,
+          "image": "images/icons/flask.png"
+        },
+        {
+          "name": "Vue.js",
+          "level": 5,
+          "image": "images/icons/vue.png"
+        }
       ]
     },
-    
     {
       "category": {
         "es": "Bases de datos",
@@ -355,7 +393,11 @@
           "level": 7,
           "image": "images/icons/postgres.png"
         },
-        { "name": "SQL", "level": 7, "image": "images/icons/sql.png" },
+        {
+          "name": "SQL",
+          "level": 7,
+          "image": "images/icons/sql.png"
+        },
         {
           "name": "Dynamics (CRM)",
           "level": 6,
@@ -369,9 +411,21 @@
         "en": "Tools"
       },
       "items": [
-        { "name": "Git", "level": 6, "image": "images/icons/git.png" },
-        { "name": "Postman", "level": 6, "image": "images/icons/postman.png" },
-        { "name": "Docker", "level": 5, "image": "images/icons/docker.png" }
+        {
+          "name": "Git",
+          "level": 6,
+          "image": "images/icons/git.png"
+        },
+        {
+          "name": "Postman",
+          "level": 6,
+          "image": "images/icons/postman.png"
+        },
+        {
+          "name": "Docker",
+          "level": 5,
+          "image": "images/icons/docker.png"
+        }
       ]
     },
     {
@@ -419,6 +473,82 @@
           "image": "images/icons/google_realtime.png"
         }
       ]
+    }
+  ],
+  "language_proficiency": [
+    {
+      "language": {
+        "es": "Español",
+        "en": "Spanish"
+      },
+      "level": {
+        "es": "Nativo",
+        "en": "Native"
+      }
+    },
+    {
+      "language": {
+        "es": "Inglés",
+        "en": "English"
+      },
+      "level": {
+        "es": "Nivel B1",
+        "en": "B1 Level"
+      }
+    }
+  ],
+  "references": [
+    {
+      "full_name": "Nombre completo de la referencia 1",
+      "role": {
+        "es": "Cargo o rol",
+        "en": "Role or position"
+      },
+      "company": "Empresa u organización",
+      "relationship": {
+        "es": "Relación profesional (describe brevemente)",
+        "en": "Professional relationship (brief description)"
+      },
+      "email": "correo@ejemplo.com",
+      "phone": "+57 300 000 0000"
+    },
+    {
+      "full_name": "Nombre completo de la referencia 2",
+      "role": {
+        "es": "Cargo o rol",
+        "en": "Role or position"
+      },
+      "company": "Empresa u organización",
+      "relationship": {
+        "es": "Relación profesional (describe brevemente)",
+        "en": "Professional relationship (brief description)"
+      },
+      "email": "correo@ejemplo.com",
+      "phone": "+57 300 000 0000"
+    }
+  ],
+  "projects": [
+    {
+      "name": {
+        "es": "Proyecto destacado 1",
+        "en": "Featured project 1"
+      },
+      "url": "https://github.com/usuario/proyecto-1",
+      "description": {
+        "es": "Breve descripción del proyecto en español.",
+        "en": "Short project description in English."
+      }
+    },
+    {
+      "name": {
+        "es": "Proyecto destacado 2",
+        "en": "Featured project 2"
+      },
+      "url": "https://github.com/usuario/proyecto-2",
+      "description": {
+        "es": "Segunda descripción de proyecto en español.",
+        "en": "Second project description in English."
+      }
     }
   ]
 }

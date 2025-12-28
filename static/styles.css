@@ -259,6 +259,33 @@ body{
 .fill.lvl-3{width:30%;}
 .fill.lvl-2{width:20%;}
 .fill.lvl-1{width:10%;}
+
+.languages{display:flex;flex-direction:column;gap:10px;padding:0 6px;margin-top:6px;}
+.language-item{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-radius:8px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.05);}
+[data-theme="light"] .language-item{background:rgba(255,255,255,0.85);border-color:rgba(15,23,42,0.08);}
+.language-name{font-weight:600;color:var(--text);}
+.language-level{color:var(--muted);font-size:13px;}
+
+.references{display:grid;gap:16px;margin-top:6px;}
+.reference-card{padding:16px;border-radius:10px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);box-shadow:0 16px 40px rgba(0,0,0,0.2);}
+[data-theme="light"] .reference-card{background:rgba(255,255,255,0.92);border-color:rgba(15,23,42,0.08);box-shadow:0 16px 36px rgba(15,23,42,0.12);}
+.reference-header{display:flex;flex-direction:column;gap:4px;margin-bottom:8px;}
+.reference-name{font-weight:600;color:var(--text);font-size:14px;}
+.reference-role,.reference-company{font-size:12px;}
+.reference-relationship{margin:0 0 10px;color:var(--text);font-size:13px;}
+.reference-contact{display:flex;flex-wrap:wrap;gap:10px;font-size:13px;align-items:center;}
+.reference-email{color:var(--accent);text-decoration:none;}
+.reference-phone{color:var(--muted);}
+.reference-sep{color:var(--muted);}
+
+.projects{display:grid;gap:16px;margin-top:6px;}
+.project-card{padding:16px;border-radius:10px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);box-shadow:0 14px 34px rgba(0,0,0,0.18);}
+[data-theme="light"] .project-card{background:rgba(255,255,255,0.94);border-color:rgba(15,23,42,0.08);box-shadow:0 14px 30px rgba(15,23,42,0.1);}
+.project-header{margin-bottom:6px;font-weight:600;}
+.project-link{color:var(--accent);text-decoration:none;}
+.project-link:hover{text-decoration:underline;}
+.project-name{color:var(--text);}
+.project-description{margin:0;color:var(--muted);font-size:13px;line-height:1.5;}
 .panel-footer{margin-top:20px;text-align:center;font-size:12px;color:var(--muted);}
 .panel-footer a{color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent);padding-bottom:1px;}
 [data-theme="light"] .panel-footer a{border-color:rgba(209,139,70,0.4);}

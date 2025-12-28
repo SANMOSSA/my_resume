@@ -149,6 +149,63 @@
 
     <div class="rule"></div>
 
+    <section class="section-title"><span id="languagesTitle">{{ data.labels.languages_section }}</span></section>
+
+    <section class="languages" id="languagesSection">
+      {% for lang in data.language_proficiency or [] %}
+      <div class="language-item">
+        <span class="language-name">{{ lang.language }}</span>
+        <span class="language-level">{{ lang.level }}</span>
+      </div>
+      {% endfor %}
+    </section>
+
+    <!-- 
+    <div class="rule"></div>
+
+    <section class="section-title"><span id="referencesTitle">{{ data.labels.references }}</span></section>
+    <section class="references" id="referencesSection">
+      {% for ref in data.references or [] %}
+      <div class="reference-card">
+        <div class="reference-header">
+          <div class="reference-name">{{ ref.full_name }}</div>
+          <div class="reference-role muted">{{ ref.role }}</div>
+          <div class="reference-company muted">{{ ref.company }}</div>
+        </div>
+        <p class="reference-relationship">{{ ref.relationship }}</p>
+        <div class="reference-contact">
+          {% if ref.email %}
+          <a href="mailto:{{ ref.email }}" class="reference-email">{{ ref.email }}</a>
+          {% endif %}
+          {% if ref.phone %}
+          <span class="reference-phone">{{ ref.phone }}</span>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </section>
+
+    <div class="rule"></div>
+
+    <section class="section-title"><span id="projectsTitle">{{ data.labels.projects }}</span></section>
+
+    <section class="projects" id="projectsSection">
+      {% for project in data.projects or [] %}
+      <article class="project-card">
+        <div class="project-header">
+          {% if project.url %}
+          <a href="{{ project.url }}" target="_blank" rel="noopener" class="project-link">{{ project.name }}</a>
+          {% else %}
+          <span class="project-name">{{ project.name }}</span>
+          {% endif %}
+        </div>
+        <p class="project-description">{{ project.description }}</p>
+      </article>
+      {% endfor %}
+    </section>
+ -->
+    <div class="rule"></div>
+
     <footer class="panel-footer muted">
       <span id="visualNotePrefix">{{ data.labels.visual_note_prefix }}</span>
       <a id="visualNoteLink" href="{{ data.labels.visual_note_href }}" target="_blank" rel="noopener">{{ data.labels.visual_note_link }}</a>

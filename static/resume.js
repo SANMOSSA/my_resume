@@ -63,9 +63,15 @@
     dom.experienceTitle = document.getElementById('experienceTitle');
     dom.educationTitle = document.getElementById('educationTitle');
     dom.skillsTitle = document.getElementById('skillsTitle');
+    dom.languagesTitle = document.getElementById('languagesTitle');
+    dom.referencesTitle = document.getElementById('referencesTitle');
+    dom.projectsTitle = document.getElementById('projectsTitle');
     dom.experienceSection = document.getElementById('experienceSection');
     dom.educationSection = document.getElementById('educationSection');
     dom.skillsSection = document.getElementById('skillsSection');
+    dom.languagesSection = document.getElementById('languagesSection');
+    dom.referencesSection = document.getElementById('referencesSection');
+    dom.projectsSection = document.getElementById('projectsSection');
     dom.visualNotePrefix = document.getElementById('visualNotePrefix');
     dom.visualNoteLink = document.getElementById('visualNoteLink');
     dom.langToggle = document.getElementById('langToggle');
@@ -137,10 +143,16 @@
     if(dom.experienceTitle) dom.experienceTitle.textContent = labels.experience || '';
     if(dom.educationTitle) dom.educationTitle.textContent = labels.education || '';
     if(dom.skillsTitle) dom.skillsTitle.textContent = labels.skills || '';
+    if(dom.languagesTitle) dom.languagesTitle.textContent = labels.languages_section || '';
+    if(dom.referencesTitle) dom.referencesTitle.textContent = labels.references || '';
+    if(dom.projectsTitle) dom.projectsTitle.textContent = labels.projects || '';
 
     renderExperiences(langData.experiences || []);
     renderEducation(langData.education || []);
     renderSkills(langData.skills || []);
+    renderLanguages(langData.language_proficiency || []);
+    renderReferences(langData.references || []);
+    renderProjects(langData.projects || []);
 
     if(dom.visualNotePrefix) dom.visualNotePrefix.textContent = labels.visual_note_prefix || '';
     if(dom.visualNoteLink){
@@ -247,6 +259,59 @@
       }).join('');
       block.innerHTML = `<h3 class="skill-category">${cat.category}</h3>${itemsMarkup}`;
       dom.skillsSection.appendChild(block);
+    });
+  }
+
+  function renderLanguages(items){
+    if(!dom.languagesSection) return;
+    dom.languagesSection.innerHTML = '';
+    items.forEach(entry => {
+      const wrapper = document.createElement('div');
+      wrapper.className = 'language-item';
+      wrapper.innerHTML = `
+        <span class="language-name">${entry.language || ''}</span>
+        <span class="language-level">${entry.level || ''}</span>
+      `;
+      dom.languagesSection.appendChild(wrapper);
+    });
+  }
+
+  function renderReferences(items){
+    if(!dom.referencesSection) return;
+    dom.referencesSection.innerHTML = '';
+    items.forEach(ref => {
+      const card = document.createElement('div');
+      card.className = 'reference-card';
+      const email = ref.email ? `<a href="mailto:${ref.email}" class="reference-email">${ref.email}</a>` : '';
+      const phone = ref.phone ? `<span class="reference-phone">${ref.phone}</span>` : '';
+      const contactMarkup = [email, phone].filter(Boolean).join('<span class="reference-sep">•</span>');
+      card.innerHTML = `
+        <div class="reference-header">
+          <div class="reference-name">${ref.full_name || ''}</div>
+          <div class="reference-role muted">${ref.role || ''}</div>
+          <div class="reference-company muted">${ref.company || ''}</div>
+        </div>
+        <p class="reference-relationship">${ref.relationship || ''}</p>
+        <div class="reference-contact">${contactMarkup}</div>
+      `;
+      dom.referencesSection.appendChild(card);
+    });
+  }
+
+  function renderProjects(items){
+    if(!dom.projectsSection) return;
+    dom.projectsSection.innerHTML = '';
+    items.forEach(project => {
+      const article = document.createElement('article');
+      article.className = 'project-card';
+      const header = project.url
+        ? `<a href="${project.url}" target="_blank" rel="noopener" class="project-link">${project.name || ''}</a>`
+        : `<span class="project-name">${project.name || ''}</span>`;
+      article.innerHTML = `
+        <div class="project-header">${header}</div>
+        <p class="project-description">${project.description || ''}</p>
+      `;
+      dom.projectsSection.appendChild(article);
     });
   }
 
