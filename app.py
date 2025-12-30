@@ -222,8 +222,8 @@ def convert_resume_to_rendercv_yaml(dataset, language, destination):
         if highlights:
             entry['highlights'] = highlights
         reference_entries.append(entry)
-    # if reference_entries:
-    #     sections[references_label] = reference_entries
+    if reference_entries:
+        sections[references_label] = reference_entries
 
     project_entries = []
     for project in localized.get('projects', []):
@@ -237,8 +237,8 @@ def convert_resume_to_rendercv_yaml(dataset, language, destination):
         if description:
             entry['summary'] = description
         project_entries.append(entry)
-    # if project_entries:
-        # sections[projects_label] = project_entries
+    if project_entries:
+        sections[projects_label] = project_entries
 
     yaml = YAML()
     yaml.default_flow_style = False

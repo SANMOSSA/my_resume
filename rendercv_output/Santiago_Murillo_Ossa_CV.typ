@@ -473,27 +473,27 @@
 
 
 
-== Summary
+== Resumen
 
 
 #one-col-entry(
-  content: [Software Engineer with strong experience in backend development, cloud service integration, and technical leadership of mobile projects. Currently serving as a Development Manager at PartnerHelper, leading the development of an iOS application for efficient medical appointment management using AI, designing and maintaining the backend with Azure and Microsoft Dynamics integrations, and coordinating the development of AI agents powered by Large Language Models \(LLMs\) in Azure for businesses.]
+  content: [Ingeniero en sistemas con sólida experiencia en desarrollo backend, integración de servicios en la nube y dirección técnica de proyectos móviles. Actualmente me desempeño como Development Manager en PartnerHelper, liderando el desarrollo de una aplicación iOS para la gestión eficiente de citas médicas mediante el uso de IA, diseñando y manteniendo el backend con integraciones en Azure y Microsoft Dynamics, y coordinando el desarrollo de agentes de inteligencia artificial basados en Large Language Models \(LLMs\) en Azure para empresas.]
 )
 #v(design-entries-vertical-space-between-entries)
 #one-col-entry(
-  content: [I possess advanced skills in Python and Flask, with a strong focus on implementing scalable, secure solutions aligned with best deployment practices. In most of my projects, I apply Object-Oriented Programming \(OOP\), SOLID principles, and the Model-View-Controller \(MVC\) pattern, ensuring clean, maintainable, and easily scalable architectures.]
+  content: [Poseo competencias avanzadas en Python y Flask, con enfoque en la implementación de soluciones escalables, seguras y alineadas con buenas prácticas de despliegue. En la mayoría de mis proyectos aplico Programación Orientada a Objetos \(POO\), principios SOLID y el patrón Modelo-Vista-Controlador \(MVC\), garantizando arquitecturas limpias, mantenibles y fáciles de escalar.]
 )
 #v(design-entries-vertical-space-between-entries)
 #one-col-entry(
-  content: [I have developed projects in natural language processing, audio transcription, and synthetic voice generation, as well as the design of conversational agents \(voice, text, and chat\) focused on customer acquisition and support through Meta channels and web chats. These solutions integrate AI into corporate internal systems, optimizing processes and enhancing the user experience.]
+  content: [He desarrollado proyectos de procesamiento de lenguaje natural, transcripción de audio y generación de voz sintética, además del diseño de agentes conversacionales \(voz, texto y chat\) orientados a la adquisición y soporte de clientes por medio de los canales de Meta y chats webs. Estas soluciones integran IA en sistemas internos corporativos, optimizando procesos y mejorando la experiencia de usuario.]
 )
 #v(design-entries-vertical-space-between-entries)
 #one-col-entry(
-  content: [Additionally, I have developed automation applications to optimize personal and organizational processes, including automatic download systems and repetitive task scripts. I am characterized by my analytical skills, problem-solving ability, adaptability to new technologies, and commitment to delivering effective and scalable solutions. I am a native Spanish speaker with intermediate English proficiency.]
+  content: [Adicionalmente, he desarrollado aplicaciones de automatización para la optimización de procesos personales y organizacionales, incluyendo sistemas de descargas automaticas y scripts de tareas repetitivas. Me caracterizo por mis habilidades analíticas, capacidad de resolución de problemas, adaptabilidad a nuevas tecnologías y compromiso con la entrega de soluciones efectivas y escalables. Soy hablante nativo de español y cuento con nivel intermedio de inglés.]
 )
 
 
-== Experience
+== Experiencia
 
 
 #two-col-entry(
@@ -501,71 +501,71 @@
     #strong[PartnerHelper], Development Manager
     #v(-design-text-leading)
 
-    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [AI leader, responsible for developing an iOS medical appointment app with AI and creating AI agents for clients.])], column-gutter: 0cm)
+    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Líder en inteligencia artificial, responsable del desarrollo de una app iOS de citas médicas con IA y de la creación de agentes de IA para clientes.])], column-gutter: 0cm)
 
-#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Leader of the development and architecture of an iOS application for medical appointments.],[Integrations and deployments with Azure and Microsoft Dynamics.],[Design and deployment of LLM-based AI agents for businesses.],[Team coordination and delivery schedule management.],)
+#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Lider del desarrollo y arquitectura de una aplicación iOS para citas médicas.],[Integraciones y desplieges con Azure y Microsoft Dynamics.],[Diseño y desarrollo de agentes de inteligencia artificial basados en LLMs para empresas.],[Coordinación de equipos y fechas de entrega.],)
   ],
   right-content: [
-    Remote
+    Remoto
 
-December 2025 — Present
+Diciembre 2025 — Presente
   ],
 )
 
 #v(design-entries-vertical-space-between-entries)
 #two-col-entry(
   left-content: [
-    #strong[PartnerHelper], Application Engineer
+    #strong[PartnerHelper], Ingeniero de Aplicaciones
     #v(-design-text-leading)
 
-    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Backend-focused developer for iOS medical appointment applications.])], column-gutter: 0cm)
+    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Desarrollador enfocado en el backend de una aplicacion iOS para citas medicas.])], column-gutter: 0cm)
 
-#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Developed APIs enabling core functionalities in an iOS application],[Integrations and deployments with Azure and Microsoft Dynamics.],[Collaborated on service architecture and deployments.],)
+#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Desarrolló de APIs que habilitan funcionalidades clave en una aplicación iOS.],[Integraciones y desplieges con Azure y Microsoft Dynamics.],[Colaboración en la arquitectura de servicios y despliegues.],)
   ],
   right-content: [
-    Remote
+    Remoto
 
-May 2024 — December 2025
+Mayo 2024 — Diciembre 2025
   ],
 )
 
 #v(design-entries-vertical-space-between-entries)
 #two-col-entry(
   left-content: [
-    #strong[Universidad Tecnológica de Pereira], Technical Support \(Part-time\)
+    #strong[Universidad Tecnológica de Pereira], Soporte Tecnico \(Parcial\)
     #v(-design-text-leading)
 
-    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Developer of an web application to manage computer labs and control lost items within them.])], column-gutter: 0cm)
+    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Desarrollador de una aplicativo web de gestion de salas de computo y el control de los objetos perdidos en ellas.])], column-gutter: 0cm)
 
-#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Development backend features for the application.],[Development frontend features for the application.],[Development, deploy and maintained.],)
+#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Desarrollo de funcionalidades backend para la aplicación.],[Desarrollo de funcionalidades frontend para la aplicación.],[Desarrollo, despliegue y mantenimiento.],)
   ],
   right-content: [
-    Presential
+    Presencial
 
-August 2024 — December 2024
+Agosto 2024 — Diciembre 2024
   ],
 )
 
 #v(design-entries-vertical-space-between-entries)
 #two-col-entry(
   left-content: [
-    #strong[José Jaramillo Villegas], Development Assistant
+    #strong[José Jaramillo Villegas], Auxiliar de Desarrollo
     #v(-design-text-leading)
 
-    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Auxiliar Backend-focused developer for iOS medical appointment applications.])], column-gutter: 0cm)
+    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Desarrollador auxiliar enfocado en el backend de una aplicacion iOS para citas medicas.])], column-gutter: 0cm)
 
-#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Developed APIs enabling core functionalities in an iOS application],[Integrations and deployments with Azure and Microsoft Dynamics.],)
+#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Desarrolló de APIs que habilitan funcionalidades clave en una aplicación iOS.],[Integraciones y desplieges con Azure y Microsoft Dynamics.],)
   ],
   right-content: [
-    Remote
+    Remoto
 
-March 2023 — May 2024
+Marzo 2023 — Mayo 2024
   ],
 )
 
 
 
-== Education
+== Educación
 
 
 // YES DATE, YES DEGREE
@@ -573,10 +573,10 @@ March 2023 — May 2024
   left-column-width: 1cm,
   left-content: [],
   middle-content: [
-    #strong[Universidad Tecnológica de Pereira], MSc in Artificial Intelligence and Data Science
+    #strong[Universidad Tecnológica de Pereira], Maestría en Inteligencia Artificial y Ciencia de Datos \(Sistemas y Computación\)
   ],
   right-content: [
-    August 2025 — Present
+    Agosto 2025 — Presente
   ],
 )
 
@@ -584,38 +584,38 @@ March 2023 — May 2024
 // YES DATE, YES DEGREE
 #three-col-entry(
   left-column-width: 1cm,
-  left-content: [#strong[Graduated]],
+  left-content: [#strong[Graduado]],
   middle-content: [
-    #strong[Universidad Tecnológica de Pereira], BSc in Software Engineering
+    #strong[Universidad Tecnológica de Pereira], Ingeniería de Sistemas y Computación
   ],
   right-content: [
-    January 2020 — February 2025
+    Enero 2020 — Febrero 2025
   ],
 )
 
 
 
-== Skills
+== Habilidades
 
 
 #one-col-entry(
-  content: [#strong[Artificial Intelligence:] Large Language Models \(LLMs\), Tools-Calling \(LLMs\), Automatic Speech Recognition \(ASR\), Text-to-Speech \(TTS\)]
+  content: [#strong[Inteligencia Artificial:] Large Language Models \(LLMs\), Tools-Calling \(LLMs\), Automatic Speech Recognition \(ASR\), Text-to-Speech \(TTS\)]
 )
 #v(design-entries-vertical-space-between-entries)
 #one-col-entry(
-  content: [#strong[Languages:] Python, HTML, CSS, JavaScript]
+  content: [#strong[Lenguajes:] Python, HTML, CSS, JavaScript]
 )
 #v(design-entries-vertical-space-between-entries)
 #one-col-entry(
-  content: [#strong[Frameworks and libraries:] Flask, Vue.js]
+  content: [#strong[Frameworks y librerias:] Flask, Vue.js]
 )
 #v(design-entries-vertical-space-between-entries)
 #one-col-entry(
-  content: [#strong[Databases:] PostgresSQL, SQL, Dynamics \(CRM\)]
+  content: [#strong[Bases de datos:] PostgresSQL, SQL, Dynamics \(CRM\)]
 )
 #v(design-entries-vertical-space-between-entries)
 #one-col-entry(
-  content: [#strong[Tools:] Git, Postman, Docker]
+  content: [#strong[Herramientas:] Git, Postman, Docker]
 )
 #v(design-entries-vertical-space-between-entries)
 #one-col-entry(
@@ -627,15 +627,15 @@ March 2023 — May 2024
 )
 
 
-== Languages
+== Idiomas
 
 
 #one-col-entry(
-  content: [#strong[Spanish:] Native]
+  content: [#strong[Español:] Nativo]
 )
 #v(design-entries-vertical-space-between-entries)
 #one-col-entry(
-  content: [#strong[English:] B1 Level]
+  content: [#strong[Inglés:] Nivel B1]
 )
 
 

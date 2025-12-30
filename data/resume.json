@@ -64,8 +64,8 @@
       "en": "Professional References"
     },
     "projects": {
-      "es": "Proyectos",
-      "en": "Projects"
+      "es": "Proyectos Publicos",
+      "en": "Public Projects"
     },
     "visual_note_prefix": {
       "es": "Basado en el estilo del repositorio",
@@ -499,55 +499,43 @@
   ],
   "references": [
     {
-      "full_name": "Nombre completo de la referencia 1",
+      "full_name": "José Alfredo Jaramillo Villegas",
       "role": {
-        "es": "Cargo o rol",
-        "en": "Role or position"
+        "es": "Empleador",
+        "en": "Employer"
       },
-      "company": "Empresa u organización",
+      "company": "",
       "relationship": {
-        "es": "Relación profesional (describe brevemente)",
-        "en": "Professional relationship (brief description)"
+        "es": "",
+        "en": ""
       },
-      "email": "correo@ejemplo.com",
-      "phone": "+57 300 000 0000"
+      "email": "jjv@utp.edu.co",
+      "phone": "+57 322 6717102"
     },
     {
-      "full_name": "Nombre completo de la referencia 2",
+      "full_name": "Giovanni Vásquez Rojas",
       "role": {
-        "es": "Cargo o rol",
-        "en": "Role or position"
+        "es": "Administrador de salas de computo de la Universidad Tecnologica de Pereira",
+        "en": "Administrator of Computer Laboratories at the Universidad Tecnologica de Pereira"
       },
-      "company": "Empresa u organización",
+      "company": "Universidad Tecnologica de Pereira",
       "relationship": {
-        "es": "Relación profesional (describe brevemente)",
-        "en": "Professional relationship (brief description)"
+        "es": "Jefe inmediato.",
+        "en": "Immediate supervisor"
       },
-      "email": "correo@ejemplo.com",
-      "phone": "+57 300 000 0000"
+      "phone": "+57 310 8292864"
     }
   ],
   "projects": [
     {
       "name": {
-        "es": "Proyecto destacado 1",
-        "en": "Featured project 1"
+        "es": "Mi Curriculum",
+        "en": "My Resume"
       },
-      "url": "https://github.com/usuario/proyecto-1",
+      "url": "https://github.com/SANMOSSA/my_resume",
       "description": {
-        "es": "Breve descripción del proyecto en español.",
-        "en": "Short project description in English."
-      }
-    },
-    {
-      "name": {
-        "es": "Proyecto destacado 2",
-        "en": "Featured project 2"
-      },
-      "url": "https://github.com/usuario/proyecto-2",
-      "description": {
-        "es": "Segunda descripción de proyecto en español.",
-        "en": "Second project description in English."
+        "es": "El codigo fuente para mi pagina web/curriculum desarrollado en python",
+        "en": "The source code for my website/resumé developed in Python."
       }
     }
   ]

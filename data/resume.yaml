@@ -2,107 +2,115 @@ cv:
   design:
     theme: engineeringclassic
   name: Santiago Murillo Ossa
-  headline: Software Engineer
+  headline: Ingeniero en Sistemas y Computación
   email: murillosantiago157@gmail.com
   website: https://sanmossa.org
   social_networks:
   - network: GitHub
     username: SANMOSSA
   sections:
-    Summary:
-    - Software Engineer with strong experience in backend development, cloud 
-      service integration, and technical leadership of mobile projects. 
-      Currently serving as a Development Manager at PartnerHelper, leading the 
-      development of an iOS application for efficient medical appointment 
-      management using AI, designing and maintaining the backend with Azure and 
-      Microsoft Dynamics integrations, and coordinating the development of AI 
-      agents powered by Large Language Models (LLMs) in Azure for businesses.
-    - I possess advanced skills in Python and Flask, with a strong focus on 
-      implementing scalable, secure solutions aligned with best deployment 
-      practices. In most of my projects, I apply Object-Oriented Programming 
-      (OOP), SOLID principles, and the Model-View-Controller (MVC) pattern, 
-      ensuring clean, maintainable, and easily scalable architectures.
-    - I have developed projects in natural language processing, audio 
-      transcription, and synthetic voice generation, as well as the design of 
-      conversational agents (voice, text, and chat) focused on customer 
-      acquisition and support through Meta channels and web chats. These 
-      solutions integrate AI into corporate internal systems, optimizing 
-      processes and enhancing the user experience.
-    - Additionally, I have developed automation applications to optimize 
-      personal and organizational processes, including automatic download 
-      systems and repetitive task scripts. I am characterized by my analytical 
-      skills, problem-solving ability, adaptability to new technologies, and 
-      commitment to delivering effective and scalable solutions. I am a native 
-      Spanish speaker with intermediate English proficiency.
-    Experience:
+    Resumen:
+    - Ingeniero en sistemas con sólida experiencia en desarrollo backend, 
+      integración de servicios en la nube y dirección técnica de proyectos 
+      móviles. Actualmente me desempeño como Development Manager en 
+      PartnerHelper, liderando el desarrollo de una aplicación iOS para la 
+      gestión eficiente de citas médicas mediante el uso de IA, diseñando y 
+      manteniendo el backend con integraciones en Azure y Microsoft Dynamics, y 
+      coordinando el desarrollo de agentes de inteligencia artificial basados en
+      Large Language Models (LLMs) en Azure para empresas.
+    - Poseo competencias avanzadas en Python y Flask, con enfoque en la 
+      implementación de soluciones escalables, seguras y alineadas con buenas 
+      prácticas de despliegue. En la mayoría de mis proyectos aplico 
+      Programación Orientada a Objetos (POO), principios SOLID y el patrón 
+      Modelo-Vista-Controlador (MVC), garantizando arquitecturas limpias, 
+      mantenibles y fáciles de escalar.
+    - He desarrollado proyectos de procesamiento de lenguaje natural, 
+      transcripción de audio y generación de voz sintética, además del diseño de
+      agentes conversacionales (voz, texto y chat) orientados a la adquisición y
+      soporte de clientes por medio de los canales de Meta y chats webs. Estas 
+      soluciones integran IA en sistemas internos corporativos, optimizando 
+      procesos y mejorando la experiencia de usuario.
+    - Adicionalmente, he desarrollado aplicaciones de automatización para la 
+      optimización de procesos personales y organizacionales, incluyendo 
+      sistemas de descargas automaticas y scripts de tareas repetitivas. Me 
+      caracterizo por mis habilidades analíticas, capacidad de resolución de 
+      problemas, adaptabilidad a nuevas tecnologías y compromiso con la entrega 
+      de soluciones efectivas y escalables. Soy hablante nativo de español y 
+      cuento con nivel intermedio de inglés.
+    Experiencia:
     - company: PartnerHelper
       position: Development Manager
-      date: December 2025 — Present
-      location: Remote
-      summary: AI leader, responsible for developing an iOS medical appointment 
-        app with AI and creating AI agents for clients.
+      date: Diciembre 2025 — Presente
+      location: Remoto
+      summary: Líder en inteligencia artificial, responsable del desarrollo de 
+        una app iOS de citas médicas con IA y de la creación de agentes de IA 
+        para clientes.
       highlights:
-      - Leader of the development and architecture of an iOS application for 
-        medical appointments.
-      - Integrations and deployments with Azure and Microsoft Dynamics.
-      - Design and deployment of LLM-based AI agents for businesses.
-      - Team coordination and delivery schedule management.
+      - Lider del desarrollo y arquitectura de una aplicación iOS para citas 
+        médicas.
+      - Integraciones y desplieges con Azure y Microsoft Dynamics.
+      - Diseño y desarrollo de agentes de inteligencia artificial basados en 
+        LLMs para empresas.
+      - Coordinación de equipos y fechas de entrega.
     - company: PartnerHelper
-      position: Application Engineer
-      date: May 2024 — December 2025
-      location: Remote
-      summary: Backend-focused developer for iOS medical appointment 
-        applications.
+      position: Ingeniero de Aplicaciones
+      date: Mayo 2024 — Diciembre 2025
+      location: Remoto
+      summary: Desarrollador enfocado en el backend de una aplicacion iOS para 
+        citas medicas.
       highlights:
-      - Developed APIs enabling core functionalities in an iOS application
-      - Integrations and deployments with Azure and Microsoft Dynamics.
-      - Collaborated on service architecture and deployments.
+      - Desarrolló de APIs que habilitan funcionalidades clave en una aplicación
+        iOS.
+      - Integraciones y desplieges con Azure y Microsoft Dynamics.
+      - Colaboración en la arquitectura de servicios y despliegues.
     - company: Universidad Tecnológica de Pereira
-      position: Technical Support (Part-time)
-      date: August 2024 — December 2024
-      location: Presential
-      summary: Developer of an web application to manage computer labs and 
-        control lost items within them.
+      position: Soporte Tecnico (Parcial)
+      date: Agosto 2024 — Diciembre 2024
+      location: Presencial
+      summary: Desarrollador de una aplicativo web de gestion de salas de 
+        computo y el control de los objetos perdidos en ellas.
       highlights:
-      - Development backend features for the application.
-      - Development frontend features for the application.
-      - Development, deploy and maintained.
+      - Desarrollo de funcionalidades backend para la aplicación.
+      - Desarrollo de funcionalidades frontend para la aplicación.
+      - Desarrollo, despliegue y mantenimiento.
     - company: José Jaramillo Villegas
-      position: Development Assistant
-      date: March 2023 — May 2024
-      location: Remote
-      summary: Auxiliar Backend-focused developer for iOS medical appointment 
-        applications.
+      position: Auxiliar de Desarrollo
+      date: Marzo 2023 — Mayo 2024
+      location: Remoto
+      summary: Desarrollador auxiliar enfocado en el backend de una aplicacion 
+        iOS para citas medicas.
       highlights:
-      - Developed APIs enabling core functionalities in an iOS application
-      - Integrations and deployments with Azure and Microsoft Dynamics.
-    Education:
+      - Desarrolló de APIs que habilitan funcionalidades clave en una aplicación
+        iOS.
+      - Integraciones y desplieges con Azure y Microsoft Dynamics.
+    Educación:
     - institution: Universidad Tecnológica de Pereira
-      area: MSc in Artificial Intelligence and Data Science
-      date: August 2025 — Present
+      area: Maestría en Inteligencia Artificial y Ciencia de Datos (Sistemas y 
+        Computación)
+      date: Agosto 2025 — Presente
     - institution: Universidad Tecnológica de Pereira
-      area: BSc in Software Engineering
-      degree: Graduated
-      date: January 2020 — February 2025
-    Skills:
-    - label: Artificial Intelligence
+      area: Ingeniería de Sistemas y Computación
+      degree: Graduado
+      date: Enero 2020 — Febrero 2025
+    Habilidades:
+    - label: Inteligencia Artificial
       details: Large Language Models (LLMs), Tools-Calling (LLMs), Automatic 
         Speech Recognition (ASR), Text-to-Speech (TTS)
-    - label: Languages
+    - label: Lenguajes
       details: Python, HTML, CSS, JavaScript
-    - label: Frameworks and libraries
+    - label: Frameworks y librerias
       details: Flask, Vue.js
-    - label: Databases
+    - label: Bases de datos
       details: PostgresSQL, SQL, Dynamics (CRM)
-    - label: Tools
+    - label: Herramientas
       details: Git, Postman, Docker
     - label: Cloud - Azure - Microsoft
       details: Azure AI Foundry, Azure Blob Storage, Azure Web Apps, Power 
         Automate
     - label: Cloud - Google
       details: Firestore, Realtime Database
-    Languages:
-    - label: Spanish
-      details: Native
-    - label: English
-      details: B1 Level
+    Idiomas:
+    - label: Español
+      details: Nativo
+    - label: Inglés
+      details: Nivel B1
