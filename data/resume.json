@@ -529,6 +529,28 @@
   "projects": [
     {
       "name": {
+        "es": "Comparador de arriendos",
+        "en": "Rental comparison tool"
+      },
+      "url": "https://github.com/SANMOSSA/ComparadorArriendos",
+      "description": {
+        "es": "Una herramienta web semi-automatica diseñada para comparar arriendos en ciencuadras, fincaraiz y metrocuadrado",
+        "en": "A semi-automatic web tool designed to compare rentals on Ciencuadras, FincaRaíz, and Metrocuadrado"
+      }
+    },
+    {
+      "name": {
+        "es": "Gestor de facturas",
+        "en": "Billing manage"
+      },
+      "url": "https://github.com/SANMOSSA/Gestor_facturas/",
+      "description": {
+        "es": "Un gestor sencillo para almacenar y procesar facturas personales para ayudar a declarar renta",
+        "en": "A simple manager to store and process personal invoices to help with tax filing"
+      }
+    },
+    {
+      "name": {
         "es": "Mi Curriculum",
         "en": "My Resume"
       },
@@ -537,6 +559,28 @@
         "es": "El codigo fuente para mi pagina web/curriculum desarrollado en python",
         "en": "The source code for my website/resumé developed in Python."
       }
-    }
+    },
+    {
+      "name": {
+        "es": "Descargar Peliculas, Series y Anime",
+        "en": "Download Movies, Shows, and Anime"
+      },
+      "url": "https://github.com/SANMOSSA/Descargar_Peliculas_Series_Anime/",
+      "description": {
+        "es": "Un gestor de descargas sencillo enfocado en facilitar la gestion y descarga de peliculas, series y anime de forma local",
+        "en": "A simple download manager focused on making it easy to manage and locally download movies, TV shows, and anime."
+      }
+    },
+    {
+      "name": {
+        "es": "Gestor de horas en dynamics",
+        "en": "Timesheet Manager in Dynamics"
+      },
+      "url": "https://github.com/SANMOSSA/GestorHorasDynamics/",
+      "description": {
+        "es": "Un codigo de automatizacion sencilla para registrar de forma agil y rapida las horas de los proyectos en Microsoft Dynamics",
+        "en": "A simple automation code to quickly and efficiently log project hours in Microsoft Dynamics."
+      }
+    }    
   ]
 }
