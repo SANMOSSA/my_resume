@@ -323,4 +323,4 @@ def rendercv_export():
 
 if __name__ == '__main__':
     # Si ejecutas python app.py para desarrollo:
-    app.run(host='0.0.0.0', port=8080, debug=True)
+    app.run(host='0.0.0.0', port=8004, debug=True)
