@@ -113,4 +113,31 @@ cv:
     - label: Español
       details: Nativo
     - label: Inglés
-      details: Nivel B1
+      details: Nivel B2
+    Referencias laborales:
+    - name: José Alfredo Jaramillo Villegas
+      summary: Empleador
+      highlights:
+      - jjv@utp.edu.co • +57 322 6717102
+    - name: Giovanni Vásquez Rojas
+      summary: Administrador de salas de computo de la Universidad Tecnologica 
+        de Pereira, Universidad Tecnologica de Pereira
+      highlights:
+      - Jefe inmediato.
+      - +57 310 8292864
+    Proyectos Publicos:
+    - name: '[Comparador de arriendos](https://github.com/SANMOSSA/ComparadorArriendos)'
+      summary: Una herramienta web semi-automatica diseñada para comparar 
+        arriendos en ciencuadras, fincaraiz y metrocuadrado
+    - name: '[Gestor de facturas](https://github.com/SANMOSSA/Gestor_facturas/)'
+      summary: Un gestor sencillo para almacenar y procesar facturas personales 
+        para ayudar a declarar renta
+    - name: '[Mi Curriculum](https://github.com/SANMOSSA/my_resume)'
+      summary: El codigo fuente para mi pagina web/curriculum desarrollado en 
+        python
+    - name: '[Descargar Peliculas, Series y Anime](https://github.com/SANMOSSA/Descargar_Peliculas_Series_Anime/)'
+      summary: Un gestor de descargas sencillo enfocado en facilitar la gestion 
+        y descarga de peliculas, series y anime de forma local
+    - name: '[Gestor de horas en dynamics](https://github.com/SANMOSSA/GestorHorasDynamics/)'
+      summary: Un codigo de automatizacion sencilla para registrar de forma agil
+        y rapida las horas de los proyectos en Microsoft Dynamics

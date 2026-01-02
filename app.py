@@ -312,6 +312,7 @@ def rendercv_export():
 
     try:
         pdf_path, download_name = generate_rendercv_pdf(requested_language)
+        print(pdf_path,download_name)
     except (RuntimeError, FileNotFoundError) as exc:
         return jsonify({'error': str(exc)}), 500
     except Exception as exc:

@@ -71,4 +71,32 @@ Adicionalmente, he desarrollado aplicaciones de automatización para la optimiza
 # Idiomas
 
 - Español: Nativo
-- Inglés: Nivel B1
+- Inglés: Nivel B2
+# Referencias Laborales
+
+## José Alfredo Jaramillo Villegas
+
+- jjv@utp.edu.co • +57 322 6717102
+
+## Giovanni Vásquez Rojas
+
+- Jefe inmediato.
+- +57 310 8292864
+
+# Proyectos Publicos
+
+## [Comparador de arriendos](https://github.com/SANMOSSA/ComparadorArriendos)
+
+
+## [Gestor de facturas](https://github.com/SANMOSSA/Gestor_facturas/)
+
+
+## [Mi Curriculum](https://github.com/SANMOSSA/my_resume)
+
+
+## [Descargar Peliculas, Series y Anime](https://github.com/SANMOSSA/Descargar_Peliculas_Series_Anime/)
+
+
+## [Gestor de horas en dynamics](https://github.com/SANMOSSA/GestorHorasDynamics/)
+
+

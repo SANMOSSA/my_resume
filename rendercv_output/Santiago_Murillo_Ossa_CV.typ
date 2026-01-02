@@ -3,7 +3,7 @@
 
 #let name = "Santiago Murillo Ossa"
 #let locale-catalog-page-numbering-style = context { "Santiago Murillo Ossa - Page " + str(here().page()) + " of " + str(counter(page).final().first()) + "" }
-#let locale-catalog-last-updated-date-style = "Last updated in Dec 2025"
+#let locale-catalog-last-updated-date-style = "Last updated in Jan 2026"
 #let locale-catalog-language = "en"
 #let design-page-size = "us-letter"
 #let design-colors-text = rgb(0, 0, 0)
@@ -635,7 +635,96 @@ Marzo 2023 — Mayo 2024
 )
 #v(design-entries-vertical-space-between-entries)
 #one-col-entry(
-  content: [#strong[Inglés:] Nivel B1]
+  content: [#strong[Inglés:] Nivel B2]
 )
+
+
+== Referencias Laborales
+
+
+
+#one-col-entry(
+  content: [
+    #strong[José Alfredo Jaramillo Villegas]
+
+    #v(-design-text-leading)
+    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Empleador])], column-gutter: 0cm)
+
+#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([jjv\@utp.edu.co • +57 322 6717102],)
+  ],
+)
+
+#v(design-entries-vertical-space-between-entries)
+
+#one-col-entry(
+  content: [
+    #strong[Giovanni Vásquez Rojas]
+
+    #v(-design-text-leading)
+    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Administrador de salas de computo de la Universidad Tecnologica de Pereira, Universidad Tecnologica de Pereira])], column-gutter: 0cm)
+
+#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Jefe inmediato.],[+57 310 8292864],)
+  ],
+)
+
+
+
+== Proyectos Publicos
+
+
+
+#one-col-entry(
+  content: [
+    #link("https://github.com/SANMOSSA/ComparadorArriendos")[#strong[Comparador de arriendos]]
+
+    #v(-design-text-leading)
+    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Una herramienta web semi-automatica diseñada para comparar arriendos en ciencuadras, fincaraiz y metrocuadrado])], column-gutter: 0cm)
+  ],
+)
+
+#v(design-entries-vertical-space-between-entries)
+
+#one-col-entry(
+  content: [
+    #link("https://github.com/SANMOSSA/Gestor_facturas/")[#strong[Gestor de facturas]]
+
+    #v(-design-text-leading)
+    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Un gestor sencillo para almacenar y procesar facturas personales para ayudar a declarar renta])], column-gutter: 0cm)
+  ],
+)
+
+#v(design-entries-vertical-space-between-entries)
+
+#one-col-entry(
+  content: [
+    #link("https://github.com/SANMOSSA/my_resume")[#strong[Mi Curriculum]]
+
+    #v(-design-text-leading)
+    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [El codigo fuente para mi pagina web\/curriculum desarrollado en python])], column-gutter: 0cm)
+  ],
+)
+
+#v(design-entries-vertical-space-between-entries)
+
+#one-col-entry(
+  content: [
+    #link("https://github.com/SANMOSSA/Descargar_Peliculas_Series_Anime/")[#strong[Descargar Peliculas, Series y Anime]]
+
+    #v(-design-text-leading)
+    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Un gestor de descargas sencillo enfocado en facilitar la gestion y descarga de peliculas, series y anime de forma local])], column-gutter: 0cm)
+  ],
+)
+
+#v(design-entries-vertical-space-between-entries)
+
+#one-col-entry(
+  content: [
+    #link("https://github.com/SANMOSSA/GestorHorasDynamics/")[#strong[Gestor de horas en dynamics]]
+
+    #v(-design-text-leading)
+    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Un codigo de automatizacion sencilla para registrar de forma agil y rapida las horas de los proyectos en Microsoft Dynamics])], column-gutter: 0cm)
+  ],
+)
+
 
 
