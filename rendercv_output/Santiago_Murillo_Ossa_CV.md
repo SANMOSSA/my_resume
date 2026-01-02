@@ -22,17 +22,17 @@ Adicionalmente, he desarrollado aplicaciones de automatización para la optimiza
 - Diciembre 2025 — Presente
 - Remoto
 - Lider del desarrollo y arquitectura de una aplicación iOS para citas médicas.
-- Integraciones y desplieges con Azure y Microsoft Dynamics.
+- Integración y despliegue con Azure y Microsoft Dynamics.
 - Diseño y desarrollo de agentes de inteligencia artificial basados en LLMs para empresas.
-- Coordinación de equipos y fechas de entrega.
+- Coordinación de equipos y gestión de cronogramas de entrega.
 
 ## PartnerHelper, Ingeniero de Aplicaciones
 
 - Mayo 2024 — Diciembre 2025
 - Remoto
-- Desarrolló de APIs que habilitan funcionalidades clave en una aplicación iOS.
-- Integraciones y desplieges con Azure y Microsoft Dynamics.
-- Colaboración en la arquitectura de servicios y despliegues.
+- Desarrollo de APIs que habilitan funcionalidades clave en una aplicación iOS.
+- Integración y despliegue con Azure y Microsoft Dynamics.
+- Colaboración en la arquitectura de servicios y en los procesos despliegues.
 
 ## Universidad Tecnológica de Pereira, Soporte Tecnico (Parcial)
 
@@ -40,14 +40,14 @@ Adicionalmente, he desarrollado aplicaciones de automatización para la optimiza
 - Presencial
 - Desarrollo de funcionalidades backend para la aplicación.
 - Desarrollo de funcionalidades frontend para la aplicación.
-- Desarrollo, despliegue y mantenimiento.
+- Desarrollo, despliegue y mantenimiento de la aplicación.
 
 ## José Jaramillo Villegas, Auxiliar de Desarrollo
 
 - Marzo 2023 — Mayo 2024
 - Remoto
-- Desarrolló de APIs que habilitan funcionalidades clave en una aplicación iOS.
-- Integraciones y desplieges con Azure y Microsoft Dynamics.
+- Desarrollo de APIs para habilitar funcionalidades clave en una aplicación iOS.
+- Integración y despliegue en Azure y Microsoft Dynamics.
 
 # Educación
 
@@ -64,7 +64,7 @@ Adicionalmente, he desarrollado aplicaciones de automatización para la optimiza
 - Inteligencia Artificial: Large Language Models (LLMs), Tools-Calling (LLMs), Automatic Speech Recognition (ASR), Text-to-Speech (TTS)
 - Lenguajes: Python, HTML, CSS, JavaScript
 - Frameworks y librerias: Flask, Vue.js
-- Bases de datos: PostgresSQL, SQL, Dynamics (CRM)
+- Bases de datos: PostgreSQL, SQL, Dynamics (CRM)
 - Herramientas: Git, Postman, Docker
 - Cloud - Azure - Microsoft: Azure AI Foundry, Azure Blob Storage, Azure Web Apps, Power Automate
 - Cloud - Google: Firestore, Realtime Database
@@ -76,11 +76,12 @@ Adicionalmente, he desarrollado aplicaciones de automatización para la optimiza
 
 ## José Alfredo Jaramillo Villegas
 
+- Jefe inmediato
 - jjv@utp.edu.co • +57 322 6717102
 
 ## Giovanni Vásquez Rojas
 
-- Jefe inmediato.
+- Jefe inmediato
 - +57 310 8292864
 
 # Proyectos Publicos
@@ -88,10 +89,10 @@ Adicionalmente, he desarrollado aplicaciones de automatización para la optimiza
 ## [Comparador de arriendos](https://github.com/SANMOSSA/ComparadorArriendos)
 
 
-## [Gestor de facturas](https://github.com/SANMOSSA/Gestor_facturas/)
-
-
 ## [Mi Curriculum](https://github.com/SANMOSSA/my_resume)
+
+
+## [Gestor de facturas](https://github.com/SANMOSSA/Gestor_facturas/)
 
 
 ## [Descargar Peliculas, Series y Anime](https://github.com/SANMOSSA/Descargar_Peliculas_Series_Anime/)

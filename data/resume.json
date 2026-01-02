@@ -1,8 +1,5 @@
 {
-  "languages": [
-    "es",
-    "en"
-  ],
+  "languages": ["es", "en"],
   "default_language": "es",
   "command": "$ wget -P ~/downloads resume.pdf",
   "profile": {
@@ -96,8 +93,8 @@
       "image": "images/partnerhelper.png",
       "icon": "work",
       "description": {
-        "es": "Líder en inteligencia artificial, responsable del desarrollo de una app iOS de citas médicas con IA y de la creación de agentes de IA para clientes.",
-        "en": "AI leader, responsible for developing an iOS medical appointment app with AI and creating AI agents for clients."
+        "es": "Líder en inteligencia artificial, responsable del desarrollo de una app iOS de citas médicas con IA y de la creación de agentes de IA para empresas.",
+        "en": "AI leader responsible for developing an iOS medical appointment application that uses AI, and for creating AI agents for businesses."
       },
       "bullets": [
         {
@@ -110,8 +107,8 @@
         {
           "icon": "cloud_upload",
           "item": {
-            "es": "Integraciones y desplieges con Azure y Microsoft Dynamics.",
-            "en": "Integrations and deployments with Azure and Microsoft Dynamics."
+            "es": "Integración y despliegue con Azure y Microsoft Dynamics.",
+            "en": "Integration and deployment on Azure and Microsoft Dynamics."
           }
         },
         {
@@ -124,8 +121,8 @@
         {
           "icon": "group",
           "item": {
-            "es": "Coordinación de equipos y fechas de entrega.",
-            "en": "Team coordination and delivery schedule management."
+            "es": "Coordinación de equipos y gestión de cronogramas de entrega.",
+            "en": "Coordination of teams and management of delivery schedules."
           }
         }
       ]
@@ -152,28 +149,28 @@
       "icon": "work",
       "description": {
         "es": "Desarrollador enfocado en el backend de una aplicacion iOS para citas medicas.",
-        "en": "Backend-focused developer for iOS medical appointment applications."
+        "en": "Backend-focused developer for an iOS medical appointment applications."
       },
       "bullets": [
         {
           "icon": "code",
           "item": {
-            "es": "Desarrolló de APIs que habilitan funcionalidades clave en una aplicación iOS.",
-            "en": "Developed APIs enabling core functionalities in an iOS application"
+            "es": "Desarrollo de APIs que habilitan funcionalidades clave en una aplicación iOS.",
+            "en": "API development to enable core features in an iOS application."
           }
         },
         {
           "icon": "cloud_upload",
           "item": {
-            "es": "Integraciones y desplieges con Azure y Microsoft Dynamics.",
-            "en": "Integrations and deployments with Azure and Microsoft Dynamics."
+            "es": "Integración y despliegue con Azure y Microsoft Dynamics.",
+            "en": "Integration and deployment on Azure and Microsoft Dynamics."
           }
         },
         {
           "icon": "integration_instructions",
           "item": {
-            "es": "Colaboración en la arquitectura de servicios y despliegues.",
-            "en": "Collaborated on service architecture and deployments."
+            "es": "Colaboración en la arquitectura de servicios y en los procesos despliegues.",
+            "en": "Collaboration on service architecture and deployment processes."
           }
         }
       ]
@@ -186,7 +183,7 @@
       },
       "location": {
         "es": "Presencial",
-        "en": "Presential"
+        "en": "On-site"
       },
       "start": {
         "es": "Agosto 2024",
@@ -199,29 +196,29 @@
       "image": "images/utp.png",
       "icon": "school",
       "description": {
-        "es": "Desarrollador de una aplicativo web de gestion de salas de computo y el control de los objetos perdidos en ellas.",
-        "en": "Developer of an web application to manage computer labs and control lost items within them."
+        "es": "Desarrollador de una aplicativo web de gestion de salas de computo y control de los objetos perdidos.",
+        "en": "Developer of a web application to manage computer labs and control lost-and-found items."
       },
       "bullets": [
         {
           "icon": "code",
           "item": {
             "es": "Desarrollo de funcionalidades backend para la aplicación.",
-            "en": "Development backend features for the application."
+            "en": "Back-end feature development for the application."
           }
         },
         {
           "icon": "code",
           "item": {
             "es": "Desarrollo de funcionalidades frontend para la aplicación.",
-            "en": "Development frontend features for the application."
+            "en": "Front-end feature development for the application."
           }
         },
         {
           "icon": "build",
           "item": {
-            "es": "Desarrollo, despliegue y mantenimiento.",
-            "en": "Development, deploy and maintained."
+            "es": "Desarrollo, despliegue y mantenimiento de la aplicación.",
+            "en": "Development, deployment, and maintenance of the application."
           }
         }
       ]
@@ -247,21 +244,21 @@
       "icon": "person",
       "description": {
         "es": "Desarrollador auxiliar enfocado en el backend de una aplicacion iOS para citas medicas.",
-        "en": "Auxiliar Backend-focused developer for iOS medical appointment applications."
+        "en": "Assistant backend developer for an iOS medical appointment application."
       },
       "bullets": [
         {
           "icon": "code",
           "item": {
-            "es": "Desarrolló de APIs que habilitan funcionalidades clave en una aplicación iOS.",
-            "en": "Developed APIs enabling core functionalities in an iOS application"
+            "es": "Desarrollo de APIs para habilitar funcionalidades clave en una aplicación iOS.",
+            "en": "API development to enable core features in an iOS application."
           }
         },
         {
           "icon": "cloud_upload",
           "item": {
-            "es": "Integraciones y desplieges con Azure y Microsoft Dynamics.",
-            "en": "Integrations and deployments with Azure and Microsoft Dynamics."
+            "es": "Integración y despliegue en Azure y Microsoft Dynamics.",
+            "en": "Integration and deployment on Azure and Microsoft Dynamics."
           }
         }
       ]
@@ -389,7 +386,7 @@
       },
       "items": [
         {
-          "name": "PostgresSQL",
+          "name": "PostgreSQL",
           "level": 7,
           "image": "images/icons/postgres.png"
         },
@@ -435,7 +432,7 @@
       },
       "items": [
         {
-          "name": "Azure AI Foundry ",
+          "name": "Azure AI Foundry",
           "level": 8,
           "image": "images/icons/azure_ai_foundry.png"
         },
@@ -506,8 +503,8 @@
       },
       "company": "",
       "relationship": {
-        "es": "",
-        "en": ""
+        "es": "Jefe inmediato",
+        "en": "Immediate supervisor"
       },
       "email": "jjv@utp.edu.co",
       "phone": "+57 322 6717102"
@@ -520,7 +517,7 @@
       },
       "company": "Universidad Tecnologica de Pereira",
       "relationship": {
-        "es": "Jefe inmediato.",
+        "es": "Jefe inmediato",
         "en": "Immediate supervisor"
       },
       "phone": "+57 310 8292864"
@@ -534,8 +531,19 @@
       },
       "url": "https://github.com/SANMOSSA/ComparadorArriendos",
       "description": {
-        "es": "Una herramienta web semi-automatica diseñada para comparar arriendos en ciencuadras, fincaraiz y metrocuadrado",
-        "en": "A semi-automatic web tool designed to compare rentals on Ciencuadras, FincaRaíz, and Metrocuadrado"
+        "es": "Una herramienta web automatica diseñada para comparar arriendos en Ciencuadras, FincaRaíz y Metrocuadrado",
+        "en": "An automatic web tool designed to compare rentals on Ciencuadras, FincaRaíz, and Metrocuadrado."
+      }
+    },
+    {
+      "name": {
+        "es": "Mi Curriculum",
+        "en": "My Resume"
+      },
+      "url": "https://github.com/SANMOSSA/my_resume",
+      "description": {
+        "es": "El código fuente de mi página web/currículum desarrollado en Python.",
+        "en": "The source code for my website/resume developed in Python."
       }
     },
     {
@@ -551,24 +559,13 @@
     },
     {
       "name": {
-        "es": "Mi Curriculum",
-        "en": "My Resume"
-      },
-      "url": "https://github.com/SANMOSSA/my_resume",
-      "description": {
-        "es": "El codigo fuente para mi pagina web/curriculum desarrollado en python",
-        "en": "The source code for my website/resumé developed in Python."
-      }
-    },
-    {
-      "name": {
         "es": "Descargar Peliculas, Series y Anime",
         "en": "Download Movies, Shows, and Anime"
       },
       "url": "https://github.com/SANMOSSA/Descargar_Peliculas_Series_Anime/",
       "description": {
-        "es": "Un gestor de descargas sencillo enfocado en facilitar la gestion y descarga de peliculas, series y anime de forma local",
-        "en": "A simple download manager focused on making it easy to manage and locally download movies, TV shows, and anime."
+        "es": "Un gestor de descargas sencillo enfocado en facilitar la gestión y descarga de películas, series y anime de forma local.",
+        "en": "A simple download manager focused on facilitating the local management and download of movies, TV series, and anime."
       }
     },
     {
@@ -578,9 +575,9 @@
       },
       "url": "https://github.com/SANMOSSA/GestorHorasDynamics/",
       "description": {
-        "es": "Un codigo de automatizacion sencilla para registrar de forma agil y rapida las horas de los proyectos en Microsoft Dynamics",
-        "en": "A simple automation code to quickly and efficiently log project hours in Microsoft Dynamics."
+        "es": "Un código de automatización sencillo para registrar de forma ágil y rápida las horas de los proyectos en Microsoft Dynamics.",
+        "en": "A simple automation script to quickly and efficiently log project hours in Microsoft Dynamics."
       }
-    }    
+    }
   ]
 }

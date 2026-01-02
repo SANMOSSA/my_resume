@@ -501,9 +501,9 @@
     #strong[PartnerHelper], Development Manager
     #v(-design-text-leading)
 
-    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Líder en inteligencia artificial, responsable del desarrollo de una app iOS de citas médicas con IA y de la creación de agentes de IA para clientes.])], column-gutter: 0cm)
+    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Líder en inteligencia artificial, responsable del desarrollo de una app iOS de citas médicas con IA y de la creación de agentes de IA para empresas.])], column-gutter: 0cm)
 
-#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Lider del desarrollo y arquitectura de una aplicación iOS para citas médicas.],[Integraciones y desplieges con Azure y Microsoft Dynamics.],[Diseño y desarrollo de agentes de inteligencia artificial basados en LLMs para empresas.],[Coordinación de equipos y fechas de entrega.],)
+#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Lider del desarrollo y arquitectura de una aplicación iOS para citas médicas.],[Integración y despliegue con Azure y Microsoft Dynamics.],[Diseño y desarrollo de agentes de inteligencia artificial basados en LLMs para empresas.],[Coordinación de equipos y gestión de cronogramas de entrega.],)
   ],
   right-content: [
     Remoto
@@ -520,7 +520,7 @@ Diciembre 2025 — Presente
 
     #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Desarrollador enfocado en el backend de una aplicacion iOS para citas medicas.])], column-gutter: 0cm)
 
-#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Desarrolló de APIs que habilitan funcionalidades clave en una aplicación iOS.],[Integraciones y desplieges con Azure y Microsoft Dynamics.],[Colaboración en la arquitectura de servicios y despliegues.],)
+#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Desarrollo de APIs que habilitan funcionalidades clave en una aplicación iOS.],[Integración y despliegue con Azure y Microsoft Dynamics.],[Colaboración en la arquitectura de servicios y en los procesos despliegues.],)
   ],
   right-content: [
     Remoto
@@ -535,9 +535,9 @@ Mayo 2024 — Diciembre 2025
     #strong[Universidad Tecnológica de Pereira], Soporte Tecnico \(Parcial\)
     #v(-design-text-leading)
 
-    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Desarrollador de una aplicativo web de gestion de salas de computo y el control de los objetos perdidos en ellas.])], column-gutter: 0cm)
+    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Desarrollador de una aplicativo web de gestion de salas de computo y control de los objetos perdidos.])], column-gutter: 0cm)
 
-#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Desarrollo de funcionalidades backend para la aplicación.],[Desarrollo de funcionalidades frontend para la aplicación.],[Desarrollo, despliegue y mantenimiento.],)
+#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Desarrollo de funcionalidades backend para la aplicación.],[Desarrollo de funcionalidades frontend para la aplicación.],[Desarrollo, despliegue y mantenimiento de la aplicación.],)
   ],
   right-content: [
     Presencial
@@ -554,7 +554,7 @@ Agosto 2024 — Diciembre 2024
 
     #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Desarrollador auxiliar enfocado en el backend de una aplicacion iOS para citas medicas.])], column-gutter: 0cm)
 
-#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Desarrolló de APIs que habilitan funcionalidades clave en una aplicación iOS.],[Integraciones y desplieges con Azure y Microsoft Dynamics.],)
+#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Desarrollo de APIs para habilitar funcionalidades clave en una aplicación iOS.],[Integración y despliegue en Azure y Microsoft Dynamics.],)
   ],
   right-content: [
     Remoto
@@ -611,7 +611,7 @@ Marzo 2023 — Mayo 2024
 )
 #v(design-entries-vertical-space-between-entries)
 #one-col-entry(
-  content: [#strong[Bases de datos:] PostgresSQL, SQL, Dynamics \(CRM\)]
+  content: [#strong[Bases de datos:] PostgreSQL, SQL, Dynamics \(CRM\)]
 )
 #v(design-entries-vertical-space-between-entries)
 #one-col-entry(
@@ -650,7 +650,7 @@ Marzo 2023 — Mayo 2024
     #v(-design-text-leading)
     #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Empleador])], column-gutter: 0cm)
 
-#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([jjv\@utp.edu.co • +57 322 6717102],)
+#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Jefe inmediato],[jjv\@utp.edu.co • +57 322 6717102],)
   ],
 )
 
@@ -663,7 +663,7 @@ Marzo 2023 — Mayo 2024
     #v(-design-text-leading)
     #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Administrador de salas de computo de la Universidad Tecnologica de Pereira, Universidad Tecnologica de Pereira])], column-gutter: 0cm)
 
-#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Jefe inmediato.],[+57 310 8292864],)
+#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Jefe inmediato],[+57 310 8292864],)
   ],
 )
 
@@ -678,7 +678,18 @@ Marzo 2023 — Mayo 2024
     #link("https://github.com/SANMOSSA/ComparadorArriendos")[#strong[Comparador de arriendos]]
 
     #v(-design-text-leading)
-    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Una herramienta web semi-automatica diseñada para comparar arriendos en ciencuadras, fincaraiz y metrocuadrado])], column-gutter: 0cm)
+    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Una herramienta web automatica diseñada para comparar arriendos en Ciencuadras, FincaRaíz y Metrocuadrado])], column-gutter: 0cm)
+  ],
+)
+
+#v(design-entries-vertical-space-between-entries)
+
+#one-col-entry(
+  content: [
+    #link("https://github.com/SANMOSSA/my_resume")[#strong[Mi Curriculum]]
+
+    #v(-design-text-leading)
+    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [El código fuente de mi página web\/currículum desarrollado en Python.])], column-gutter: 0cm)
   ],
 )
 
@@ -697,21 +708,10 @@ Marzo 2023 — Mayo 2024
 
 #one-col-entry(
   content: [
-    #link("https://github.com/SANMOSSA/my_resume")[#strong[Mi Curriculum]]
-
-    #v(-design-text-leading)
-    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [El codigo fuente para mi pagina web\/curriculum desarrollado en python])], column-gutter: 0cm)
-  ],
-)
-
-#v(design-entries-vertical-space-between-entries)
-
-#one-col-entry(
-  content: [
     #link("https://github.com/SANMOSSA/Descargar_Peliculas_Series_Anime/")[#strong[Descargar Peliculas, Series y Anime]]
 
     #v(-design-text-leading)
-    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Un gestor de descargas sencillo enfocado en facilitar la gestion y descarga de peliculas, series y anime de forma local])], column-gutter: 0cm)
+    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Un gestor de descargas sencillo enfocado en facilitar la gestión y descarga de películas, series y anime de forma local.])], column-gutter: 0cm)
   ],
 )
 
@@ -722,7 +722,7 @@ Marzo 2023 — Mayo 2024
     #link("https://github.com/SANMOSSA/GestorHorasDynamics/")[#strong[Gestor de horas en dynamics]]
 
     #v(-design-text-leading)
-    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Un codigo de automatizacion sencilla para registrar de forma agil y rapida las horas de los proyectos en Microsoft Dynamics])], column-gutter: 0cm)
+    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Un código de automatización sencillo para registrar de forma ágil y rápida las horas de los proyectos en Microsoft Dynamics.])], column-gutter: 0cm)
   ],
 )
 

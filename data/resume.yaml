@@ -44,14 +44,14 @@ cv:
       location: Remoto
       summary: Líder en inteligencia artificial, responsable del desarrollo de 
         una app iOS de citas médicas con IA y de la creación de agentes de IA 
-        para clientes.
+        para empresas.
       highlights:
       - Lider del desarrollo y arquitectura de una aplicación iOS para citas 
         médicas.
-      - Integraciones y desplieges con Azure y Microsoft Dynamics.
+      - Integración y despliegue con Azure y Microsoft Dynamics.
       - Diseño y desarrollo de agentes de inteligencia artificial basados en 
         LLMs para empresas.
-      - Coordinación de equipos y fechas de entrega.
+      - Coordinación de equipos y gestión de cronogramas de entrega.
     - company: PartnerHelper
       position: Ingeniero de Aplicaciones
       date: Mayo 2024 — Diciembre 2025
@@ -59,20 +59,21 @@ cv:
       summary: Desarrollador enfocado en el backend de una aplicacion iOS para 
         citas medicas.
       highlights:
-      - Desarrolló de APIs que habilitan funcionalidades clave en una aplicación
+      - Desarrollo de APIs que habilitan funcionalidades clave en una aplicación
         iOS.
-      - Integraciones y desplieges con Azure y Microsoft Dynamics.
-      - Colaboración en la arquitectura de servicios y despliegues.
+      - Integración y despliegue con Azure y Microsoft Dynamics.
+      - Colaboración en la arquitectura de servicios y en los procesos 
+        despliegues.
     - company: Universidad Tecnológica de Pereira
       position: Soporte Tecnico (Parcial)
       date: Agosto 2024 — Diciembre 2024
       location: Presencial
       summary: Desarrollador de una aplicativo web de gestion de salas de 
-        computo y el control de los objetos perdidos en ellas.
+        computo y control de los objetos perdidos.
       highlights:
       - Desarrollo de funcionalidades backend para la aplicación.
       - Desarrollo de funcionalidades frontend para la aplicación.
-      - Desarrollo, despliegue y mantenimiento.
+      - Desarrollo, despliegue y mantenimiento de la aplicación.
     - company: José Jaramillo Villegas
       position: Auxiliar de Desarrollo
       date: Marzo 2023 — Mayo 2024
@@ -80,9 +81,9 @@ cv:
       summary: Desarrollador auxiliar enfocado en el backend de una aplicacion 
         iOS para citas medicas.
       highlights:
-      - Desarrolló de APIs que habilitan funcionalidades clave en una aplicación
-        iOS.
-      - Integraciones y desplieges con Azure y Microsoft Dynamics.
+      - Desarrollo de APIs para habilitar funcionalidades clave en una 
+        aplicación iOS.
+      - Integración y despliegue en Azure y Microsoft Dynamics.
     Educación:
     - institution: Universidad Tecnológica de Pereira
       area: Maestría en Inteligencia Artificial y Ciencia de Datos (Sistemas y 
@@ -101,7 +102,7 @@ cv:
     - label: Frameworks y librerias
       details: Flask, Vue.js
     - label: Bases de datos
-      details: PostgresSQL, SQL, Dynamics (CRM)
+      details: PostgreSQL, SQL, Dynamics (CRM)
     - label: Herramientas
       details: Git, Postman, Docker
     - label: Cloud - Azure - Microsoft
@@ -118,26 +119,27 @@ cv:
     - name: José Alfredo Jaramillo Villegas
       summary: Empleador
       highlights:
+      - Jefe inmediato
       - jjv@utp.edu.co • +57 322 6717102
     - name: Giovanni Vásquez Rojas
       summary: Administrador de salas de computo de la Universidad Tecnologica 
         de Pereira, Universidad Tecnologica de Pereira
       highlights:
-      - Jefe inmediato.
+      - Jefe inmediato
       - +57 310 8292864
     Proyectos Publicos:
     - name: '[Comparador de arriendos](https://github.com/SANMOSSA/ComparadorArriendos)'
-      summary: Una herramienta web semi-automatica diseñada para comparar 
-        arriendos en ciencuadras, fincaraiz y metrocuadrado
+      summary: Una herramienta web automatica diseñada para comparar arriendos 
+        en Ciencuadras, FincaRaíz y Metrocuadrado
+    - name: '[Mi Curriculum](https://github.com/SANMOSSA/my_resume)'
+      summary: El código fuente de mi página web/currículum desarrollado en 
+        Python.
     - name: '[Gestor de facturas](https://github.com/SANMOSSA/Gestor_facturas/)'
       summary: Un gestor sencillo para almacenar y procesar facturas personales 
         para ayudar a declarar renta
-    - name: '[Mi Curriculum](https://github.com/SANMOSSA/my_resume)'
-      summary: El codigo fuente para mi pagina web/curriculum desarrollado en 
-        python
     - name: '[Descargar Peliculas, Series y Anime](https://github.com/SANMOSSA/Descargar_Peliculas_Series_Anime/)'
-      summary: Un gestor de descargas sencillo enfocado en facilitar la gestion 
-        y descarga de peliculas, series y anime de forma local
+      summary: Un gestor de descargas sencillo enfocado en facilitar la gestión 
+        y descarga de películas, series y anime de forma local.
     - name: '[Gestor de horas en dynamics](https://github.com/SANMOSSA/GestorHorasDynamics/)'
-      summary: Un codigo de automatizacion sencilla para registrar de forma agil
-        y rapida las horas de los proyectos en Microsoft Dynamics
+      summary: Un código de automatización sencillo para registrar de forma ágil
+        y rápida las horas de los proyectos en Microsoft Dynamics.
