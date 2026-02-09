@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  my-resume:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: my_resume
+    ports:
+      - "9102:8004"  # Ajusta el puerto  
+    restart: unless-stopped
