@@ -1,5 +1,8 @@
 {
-  "languages": ["es", "en"],
+  "languages": [
+    "es",
+    "en"
+  ],
   "default_language": "es",
   "command": "$ wget -P ~/downloads resume.pdf",
   "profile": {
@@ -75,8 +78,8 @@
     {
       "company": "PartnerHelper",
       "role": {
-        "es": "Development Manager",
-        "en": "Development Manager"
+        "es": "Manager de Inteligencia Artificial",
+        "en": "Artificial Intelligence Manager"
       },
       "location": {
         "es": "Remoto",
@@ -98,6 +101,13 @@
       },
       "bullets": [
         {
+          "icon": "smart_toy",
+          "item": {
+            "es": "Diseño y desarrollo de agentes de inteligencia artificial basados en LLMs para empresas.",
+            "en": "Design and deployment of LLM-based AI agents for businesses."
+          }
+        },
+        {
           "icon": "phone_iphone",
           "item": {
             "es": "Lider del desarrollo y arquitectura de una aplicación iOS para citas médicas.",
@@ -109,13 +119,6 @@
           "item": {
             "es": "Integración y despliegue con Azure y Microsoft Dynamics.",
             "en": "Integration and deployment on Azure and Microsoft Dynamics."
-          }
-        },
-        {
-          "icon": "smart_toy",
-          "item": {
-            "es": "Diseño y desarrollo de agentes de inteligencia artificial basados en LLMs para empresas.",
-            "en": "Design and deployment of LLM-based AI agents for businesses."
           }
         },
         {
@@ -153,11 +156,11 @@
       },
       "bullets": [
         {
-          "icon": "code",
           "item": {
-            "es": "Desarrollo de APIs que habilitan funcionalidades clave en una aplicación iOS.",
-            "en": "API development to enable core features in an iOS application."
-          }
+            "es": "Desarrollo de APIs que habilitan funcionalidades clave en una aplicación de iOS para citas médicas.",
+            "en": "Development of APIs that enable key features in an iOS application for medical appointments."
+          },
+          "icon": "code"
         },
         {
           "icon": "cloud_upload",
@@ -167,11 +170,11 @@
           }
         },
         {
-          "icon": "integration_instructions",
           "item": {
-            "es": "Colaboración en la arquitectura de servicios y en los procesos despliegues.",
+            "es": "Colaboración en la arquitectura de servicios y en los procesos de despliegue.",
             "en": "Collaboration on service architecture and deployment processes."
-          }
+          },
+          "icon": "integration_instructions"
         }
       ]
     },
@@ -201,18 +204,11 @@
       },
       "bullets": [
         {
-          "icon": "code",
           "item": {
-            "es": "Desarrollo de funcionalidades backend para la aplicación.",
-            "en": "Back-end feature development for the application."
-          }
-        },
-        {
-          "icon": "code",
-          "item": {
-            "es": "Desarrollo de funcionalidades frontend para la aplicación.",
-            "en": "Front-end feature development for the application."
-          }
+            "es": "Desarrollo de funcionalidades backend/frontend para una aplicación de gestión de salas de cómputo y objetos perdidos.",
+            "en": "Development of back-end/front-end features for an application used to manage computer rooms and lost-and-found items."
+          },
+          "icon": "code"
         },
         {
           "icon": "build",
@@ -248,11 +244,11 @@
       },
       "bullets": [
         {
-          "icon": "code",
           "item": {
-            "es": "Desarrollo de APIs para habilitar funcionalidades clave en una aplicación iOS.",
-            "en": "API development to enable core features in an iOS application."
-          }
+            "es": "Desarrollo de APIs que habilitan funcionalidades clave en una aplicación de iOS para citas médicas.",
+            "en": "Development of APIs that enable key features in an iOS application for medical appointments."
+          },
+          "icon": "code"
         },
         {
           "icon": "cloud_upload",
